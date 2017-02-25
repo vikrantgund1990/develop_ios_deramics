@@ -13,6 +13,14 @@
 		B65532891E614DF70002A71D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65532871E614DF70002A71D /* LaunchScreen.storyboard */; };
 		B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962C21E615B8400FCF6EF /* HomeViewController.m */; };
 		B67962C51E615B8400FCF6EF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B67962C31E615B8400FCF6EF /* HomeViewController.xib */; };
+		B67962CB1E61DBF200FCF6EF /* WebServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962CA1E61DBF200FCF6EF /* WebServiceController.m */; };
+		B67962CF1E61DFEF00FCF6EF /* CustomActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962CE1E61DFEF00FCF6EF /* CustomActivityIndicatorView.m */; };
+		B67962D21E61E1D500FCF6EF /* UIColor+commonColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962D11E61E1D500FCF6EF /* UIColor+commonColor.m */; };
+		B67962D51E61E25A00FCF6EF /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962D41E61E25A00FCF6EF /* Constant.m */; };
+		B67962D81E61E6FB00FCF6EF /* ActionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962D71E61E6FB00FCF6EF /* ActionBar.m */; };
+		B67962DA1E61E72B00FCF6EF /* ActionBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = B67962D91E61E72B00FCF6EF /* ActionBar.xib */; };
+		B67962DE1E61ECB400FCF6EF /* HomeMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962DC1E61ECB400FCF6EF /* HomeMenuCell.m */; };
+		B67962DF1E61ECB400FCF6EF /* HomeMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B67962DD1E61ECB400FCF6EF /* HomeMenuCell.xib */; };
 		D1A788BD2A452C4576E5BDCC /* libPods-MyTyles.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FC36915ED0934C04F93B33 /* libPods-MyTyles.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +36,20 @@
 		B67962C11E615B8400FCF6EF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = HomeScreen/HomeViewController.h; sourceTree = "<group>"; };
 		B67962C21E615B8400FCF6EF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = HomeScreen/HomeViewController.m; sourceTree = "<group>"; };
 		B67962C31E615B8400FCF6EF /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = HomeScreen/HomeViewController.xib; sourceTree = "<group>"; };
+		B67962C91E61DBF200FCF6EF /* WebServiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebServiceController.h; path = Networking/WebServiceController.h; sourceTree = "<group>"; };
+		B67962CA1E61DBF200FCF6EF /* WebServiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebServiceController.m; path = Networking/WebServiceController.m; sourceTree = "<group>"; };
+		B67962CD1E61DFEF00FCF6EF /* CustomActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomActivityIndicatorView.h; path = Custom/CustomActivityIndicatorView.h; sourceTree = "<group>"; };
+		B67962CE1E61DFEF00FCF6EF /* CustomActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomActivityIndicatorView.m; path = Custom/CustomActivityIndicatorView.m; sourceTree = "<group>"; };
+		B67962D01E61E1D500FCF6EF /* UIColor+commonColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+commonColor.h"; path = "Custom/UIColor+commonColor.h"; sourceTree = "<group>"; };
+		B67962D11E61E1D500FCF6EF /* UIColor+commonColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+commonColor.m"; path = "Custom/UIColor+commonColor.m"; sourceTree = "<group>"; };
+		B67962D31E61E25A00FCF6EF /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = Utils/Constant.h; sourceTree = "<group>"; };
+		B67962D41E61E25A00FCF6EF /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constant.m; path = Utils/Constant.m; sourceTree = "<group>"; };
+		B67962D61E61E6FB00FCF6EF /* ActionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionBar.h; path = ActionBar/ActionBar.h; sourceTree = "<group>"; };
+		B67962D71E61E6FB00FCF6EF /* ActionBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionBar.m; path = ActionBar/ActionBar.m; sourceTree = "<group>"; };
+		B67962D91E61E72B00FCF6EF /* ActionBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActionBar.xib; path = ActionBar/ActionBar.xib; sourceTree = "<group>"; };
+		B67962DB1E61ECB400FCF6EF /* HomeMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeMenuCell.h; path = HomeScreen/HomeMenuCell.h; sourceTree = "<group>"; };
+		B67962DC1E61ECB400FCF6EF /* HomeMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeMenuCell.m; path = HomeScreen/HomeMenuCell.m; sourceTree = "<group>"; };
+		B67962DD1E61ECB400FCF6EF /* HomeMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeMenuCell.xib; path = HomeScreen/HomeMenuCell.xib; sourceTree = "<group>"; };
 		C1D5AF0AC1AEEB4EAE8C1A29 /* Pods-MyTyles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTyles.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTyles/Pods-MyTyles.release.xcconfig"; sourceTree = "<group>"; };
 		D2FC36915ED0934C04F93B33 /* libPods-MyTyles.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTyles.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +95,10 @@
 		B65532781E614DF70002A71D /* MyTyles */ = {
 			isa = PBXGroup;
 			children = (
+				B67962C61E61DA6200FCF6EF /* ActionBar */,
+				B67962CC1E61DE1000FCF6EF /* Custom */,
+				B67962C71E61DA6D00FCF6EF /* Networking */,
+				B67962C81E61DA8C00FCF6EF /* Utils */,
 				B67962C01E615B4E00FCF6EF /* HomeScreen */,
 				B655327C1E614DF70002A71D /* AppDelegate.h */,
 				B655327D1E614DF70002A71D /* AppDelegate.m */,
@@ -98,8 +124,50 @@
 				B67962C11E615B8400FCF6EF /* HomeViewController.h */,
 				B67962C21E615B8400FCF6EF /* HomeViewController.m */,
 				B67962C31E615B8400FCF6EF /* HomeViewController.xib */,
+				B67962DB1E61ECB400FCF6EF /* HomeMenuCell.h */,
+				B67962DC1E61ECB400FCF6EF /* HomeMenuCell.m */,
+				B67962DD1E61ECB400FCF6EF /* HomeMenuCell.xib */,
 			);
 			name = HomeScreen;
+			sourceTree = "<group>";
+		};
+		B67962C61E61DA6200FCF6EF /* ActionBar */ = {
+			isa = PBXGroup;
+			children = (
+				B67962D61E61E6FB00FCF6EF /* ActionBar.h */,
+				B67962D71E61E6FB00FCF6EF /* ActionBar.m */,
+				B67962D91E61E72B00FCF6EF /* ActionBar.xib */,
+			);
+			name = ActionBar;
+			sourceTree = "<group>";
+		};
+		B67962C71E61DA6D00FCF6EF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B67962C91E61DBF200FCF6EF /* WebServiceController.h */,
+				B67962CA1E61DBF200FCF6EF /* WebServiceController.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		B67962C81E61DA8C00FCF6EF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B67962D31E61E25A00FCF6EF /* Constant.h */,
+				B67962D41E61E25A00FCF6EF /* Constant.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		B67962CC1E61DE1000FCF6EF /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				B67962CD1E61DFEF00FCF6EF /* CustomActivityIndicatorView.h */,
+				B67962CE1E61DFEF00FCF6EF /* CustomActivityIndicatorView.m */,
+				B67962D01E61E1D500FCF6EF /* UIColor+commonColor.h */,
+				B67962D11E61E1D500FCF6EF /* UIColor+commonColor.m */,
+			);
+			name = Custom;
 			sourceTree = "<group>";
 		};
 		DC2685C4FAF67748530DEA7D /* Pods */ = {
@@ -172,7 +240,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B67962DF1E61ECB400FCF6EF /* HomeMenuCell.xib in Resources */,
 				B65532891E614DF70002A71D /* LaunchScreen.storyboard in Resources */,
+				B67962DA1E61E72B00FCF6EF /* ActionBar.xib in Resources */,
 				B65532861E614DF70002A71D /* Assets.xcassets in Resources */,
 				B67962C51E615B8400FCF6EF /* HomeViewController.xib in Resources */,
 			);
@@ -233,8 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B67962D21E61E1D500FCF6EF /* UIColor+commonColor.m in Sources */,
+				B67962D81E61E6FB00FCF6EF /* ActionBar.m in Sources */,
+				B67962CB1E61DBF200FCF6EF /* WebServiceController.m in Sources */,
+				B67962D51E61E25A00FCF6EF /* Constant.m in Sources */,
 				B655327E1E614DF70002A71D /* AppDelegate.m in Sources */,
 				B655327B1E614DF70002A71D /* main.m in Sources */,
+				B67962CF1E61DFEF00FCF6EF /* CustomActivityIndicatorView.m in Sources */,
+				B67962DE1E61ECB400FCF6EF /* HomeMenuCell.m in Sources */,
 				B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
