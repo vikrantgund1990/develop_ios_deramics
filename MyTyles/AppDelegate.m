@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +19,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    HomeViewController *homeViewController=[[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
+    
+    UINavigationController *navController=[[UINavigationController alloc]initWithRootViewController:homeViewController];
+    UINavigationBar *navBar = navController.navigationBar;
+    [navBar setHidden:YES];
+    if([navController respondsToSelector:(@selector(interactivePopGestureRecognizer))]) {
+        navController.interactivePopGestureRecognizer.enabled=NO;
+    }
+    
+    self.slider=[MFSideMenuContainerViewController containerWithCenterViewController:navController leftMenuViewController:nil rightMenuViewController:nil];
+    [self.slider setPanMode:MFSideMenuPanModeNone];
+    
+    self.window.rootViewController=homeViewController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

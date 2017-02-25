@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		B655327B1E614DF70002A71D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327A1E614DF70002A71D /* main.m */; };
 		B655327E1E614DF70002A71D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327D1E614DF70002A71D /* AppDelegate.m */; };
-		B65532811E614DF70002A71D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65532801E614DF70002A71D /* ViewController.m */; };
-		B65532841E614DF70002A71D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65532821E614DF70002A71D /* Main.storyboard */; };
 		B65532861E614DF70002A71D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65532851E614DF70002A71D /* Assets.xcassets */; };
 		B65532891E614DF70002A71D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65532871E614DF70002A71D /* LaunchScreen.storyboard */; };
+		B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962C21E615B8400FCF6EF /* HomeViewController.m */; };
+		B67962C51E615B8400FCF6EF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B67962C31E615B8400FCF6EF /* HomeViewController.xib */; };
+		D1A788BD2A452C4576E5BDCC /* libPods-MyTyles.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FC36915ED0934C04F93B33 /* libPods-MyTyles.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		111F9F2BB6CFC58E1EB90DDA /* Pods-MyTyles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTyles.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTyles/Pods-MyTyles.debug.xcconfig"; sourceTree = "<group>"; };
 		B65532761E614DF70002A71D /* MyTyles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTyles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B655327A1E614DF70002A71D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B655327C1E614DF70002A71D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B655327D1E614DF70002A71D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B655327F1E614DF70002A71D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B65532801E614DF70002A71D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B65532831E614DF70002A71D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B65532851E614DF70002A71D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B65532881E614DF70002A71D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B655328A1E614DF70002A71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B67962C11E615B8400FCF6EF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = HomeScreen/HomeViewController.h; sourceTree = "<group>"; };
+		B67962C21E615B8400FCF6EF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = HomeScreen/HomeViewController.m; sourceTree = "<group>"; };
+		B67962C31E615B8400FCF6EF /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = HomeScreen/HomeViewController.xib; sourceTree = "<group>"; };
+		C1D5AF0AC1AEEB4EAE8C1A29 /* Pods-MyTyles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTyles.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTyles/Pods-MyTyles.release.xcconfig"; sourceTree = "<group>"; };
+		D2FC36915ED0934C04F93B33 /* libPods-MyTyles.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTyles.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A788BD2A452C4576E5BDCC /* libPods-MyTyles.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34B205379AB833665C39B457 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2FC36915ED0934C04F93B33 /* libPods-MyTyles.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B655326D1E614DF70002A71D = {
 			isa = PBXGroup;
 			children = (
 				B65532781E614DF70002A71D /* MyTyles */,
 				B65532771E614DF70002A71D /* Products */,
+				DC2685C4FAF67748530DEA7D /* Pods */,
+				34B205379AB833665C39B457 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +73,9 @@
 		B65532781E614DF70002A71D /* MyTyles */ = {
 			isa = PBXGroup;
 			children = (
+				B67962C01E615B4E00FCF6EF /* HomeScreen */,
 				B655327C1E614DF70002A71D /* AppDelegate.h */,
 				B655327D1E614DF70002A71D /* AppDelegate.m */,
-				B655327F1E614DF70002A71D /* ViewController.h */,
-				B65532801E614DF70002A71D /* ViewController.m */,
-				B65532821E614DF70002A71D /* Main.storyboard */,
 				B65532851E614DF70002A71D /* Assets.xcassets */,
 				B65532871E614DF70002A71D /* LaunchScreen.storyboard */,
 				B655328A1E614DF70002A71D /* Info.plist */,
@@ -79,6 +92,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B67962C01E615B4E00FCF6EF /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B67962C11E615B8400FCF6EF /* HomeViewController.h */,
+				B67962C21E615B8400FCF6EF /* HomeViewController.m */,
+				B67962C31E615B8400FCF6EF /* HomeViewController.xib */,
+			);
+			name = HomeScreen;
+			sourceTree = "<group>";
+		};
+		DC2685C4FAF67748530DEA7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				111F9F2BB6CFC58E1EB90DDA /* Pods-MyTyles.debug.xcconfig */,
+				C1D5AF0AC1AEEB4EAE8C1A29 /* Pods-MyTyles.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B655328D1E614DF70002A71D /* Build configuration list for PBXNativeTarget "MyTyles" */;
 			buildPhases = (
+				E28A2FF5AA4D1EEC266809FD /* [CP] Check Pods Manifest.lock */,
 				B65532721E614DF70002A71D /* Sources */,
 				B65532731E614DF70002A71D /* Frameworks */,
 				B65532741E614DF70002A71D /* Resources */,
+				FCE644D9425CD8BAB9484584 /* [CP] Embed Pods Frameworks */,
+				9E42742EEB57CE63B7BA73BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,34 +174,74 @@
 			files = (
 				B65532891E614DF70002A71D /* LaunchScreen.storyboard in Resources */,
 				B65532861E614DF70002A71D /* Assets.xcassets in Resources */,
-				B65532841E614DF70002A71D /* Main.storyboard in Resources */,
+				B67962C51E615B8400FCF6EF /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E42742EEB57CE63B7BA73BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTyles/Pods-MyTyles-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E28A2FF5AA4D1EEC266809FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FCE644D9425CD8BAB9484584 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTyles/Pods-MyTyles-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B65532721E614DF70002A71D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B65532811E614DF70002A71D /* ViewController.m in Sources */,
 				B655327E1E614DF70002A71D /* AppDelegate.m in Sources */,
 				B655327B1E614DF70002A71D /* main.m in Sources */,
+				B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B65532821E614DF70002A71D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B65532831E614DF70002A71D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B65532871E614DF70002A71D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -268,8 +343,10 @@
 		};
 		B655328E1E614DF70002A71D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 111F9F2BB6CFC58E1EB90DDA /* Pods-MyTyles.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyTyles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mytyles.MyTyles;
@@ -279,8 +356,10 @@
 		};
 		B655328F1E614DF70002A71D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D5AF0AC1AEEB4EAE8C1A29 /* Pods-MyTyles.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyTyles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mytyles.MyTyles;
@@ -307,6 +386,7 @@
 				B655328F1E614DF70002A71D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
