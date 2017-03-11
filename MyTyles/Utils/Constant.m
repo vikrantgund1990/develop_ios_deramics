@@ -7,7 +7,7 @@
 //
 
 #import "Constant.h"
-
+#import <UIKit/UIKit.h>
 #define QA_URL "http://qa.ceramicskart.com/api/";
 #define LIVE_URL "http://mytyles.com/API/";
 #define isLive false

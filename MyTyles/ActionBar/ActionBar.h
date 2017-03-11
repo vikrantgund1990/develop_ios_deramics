@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ActionBar : UIView
-
+@property (nonatomic)IBOutlet UILabel *lblTitle;
+- (id)init:(NSString *)title callingView:(UIViewController*)callingView;
 @end

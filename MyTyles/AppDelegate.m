@@ -8,8 +8,10 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
-
-
+#import "LeftSlider.h"
+#import "MFSideMenuContainerViewController.h"
+#import "Constant.h"
+#import "MFSideMenu.h"
 @interface AppDelegate ()
 
 @end
@@ -28,11 +30,17 @@
     if([navController respondsToSelector:(@selector(interactivePopGestureRecognizer))]) {
         navController.interactivePopGestureRecognizer.enabled=NO;
     }
-    
-    self.slider=[MFSideMenuContainerViewController containerWithCenterViewController:navController leftMenuViewController:nil rightMenuViewController:nil];
+    LeftSlider *leftSlider=[[LeftSlider alloc]init];
+    leftSlider.view.frame=self.window.frame;
+    self.slider=[MFSideMenuContainerViewController containerWithCenterViewController:navController leftMenuViewController:leftSlider rightMenuViewController:nil];
     [self.slider setPanMode:MFSideMenuPanModeNone];
     
-    self.window.rootViewController=homeViewController;
+  [UIView transitionWithView:self.window duration:0.5 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        
+        self.window.rootViewController = self.slider;
+        
+    } completion:nil];
+    
     [self.window makeKeyAndVisible];
     
     return YES;
@@ -64,6 +72,15 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+        [self handleRemoteNotifications:userInfo];
+    
+}
 
+-(void)handleRemoteNotifications:(NSDictionary *)userInfo {
+    
+    UIViewController *con = [_holderStack lastObject];
+    [con.menuContainerViewController setMenuState:MFSideMenuStateClosed];
+}
 
 @end

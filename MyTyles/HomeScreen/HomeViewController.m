@@ -10,6 +10,9 @@
 #import "WebServiceController.h"
 #import "HomeMenuCell.h"
 #import "UIColor+commonColor.h"
+#import "ActionBar.h"
+#import "Constant.h"
+#import "MFSideMenu.h"
 
 @interface HomeViewController ()<UITableViewDelegate>{
     IBOutlet UITableView *tblView;
@@ -23,11 +26,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    ActionBar *actionBar=[[ActionBar alloc]init:@"ActionBar" callingView:self];
+     [self.view addSubview:actionBar];
+    AppDelegate *appDelegate=DELEGATE;
+    appDelegate.holderStack=[[NSMutableArray alloc]init];
+    [appDelegate.holderStack addObject:self];
     productArray =[[NSArray alloc]initWithObjects:@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",nil];
      ImageArray =[[NSArray alloc]initWithObjects:@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",nil];
      [tblView registerNib:[UINib nibWithNibName:@"HomeMenuCell" bundle:nil] forCellReuseIdentifier:@"HomeMenuCell"];
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(menuStateEventOccurred:)
+//                                                 name:MFSideMenuStateNotificationEvent
+//                                               object:nil];
     [tblView reloadData];
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return productArray.count;
 }

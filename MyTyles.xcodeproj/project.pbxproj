@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6063A0A1E73C57B00A05187 /* LeftSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A081E73C57A00A05187 /* LeftSlider.m */; };
+		B6063A0B1E73C57B00A05187 /* LeftSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A091E73C57A00A05187 /* LeftSlider.xib */; };
+		B6063A0D1E73CF1600A05187 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6063A0C1E73CF1600A05187 /* UIKit.framework */; };
+		B6063A0F1E73CF3200A05187 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6063A0E1E73CF3200A05187 /* Foundation.framework */; };
+		B6063A111E73CF7300A05187 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6063A101E73CF7300A05187 /* CoreGraphics.framework */; };
+		B6063A121E73D19F00A05187 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962D41E61E25A00FCF6EF /* Constant.m */; };
 		B655327B1E614DF70002A71D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327A1E614DF70002A71D /* main.m */; };
 		B655327E1E614DF70002A71D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327D1E614DF70002A71D /* AppDelegate.m */; };
 		B65532861E614DF70002A71D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65532851E614DF70002A71D /* Assets.xcassets */; };
@@ -16,7 +22,6 @@
 		B67962CB1E61DBF200FCF6EF /* WebServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962CA1E61DBF200FCF6EF /* WebServiceController.m */; };
 		B67962CF1E61DFEF00FCF6EF /* CustomActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962CE1E61DFEF00FCF6EF /* CustomActivityIndicatorView.m */; };
 		B67962D21E61E1D500FCF6EF /* UIColor+commonColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962D11E61E1D500FCF6EF /* UIColor+commonColor.m */; };
-		B67962D51E61E25A00FCF6EF /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962D41E61E25A00FCF6EF /* Constant.m */; };
 		B67962D81E61E6FB00FCF6EF /* ActionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962D71E61E6FB00FCF6EF /* ActionBar.m */; };
 		B67962DA1E61E72B00FCF6EF /* ActionBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = B67962D91E61E72B00FCF6EF /* ActionBar.xib */; };
 		B67962DE1E61ECB400FCF6EF /* HomeMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962DC1E61ECB400FCF6EF /* HomeMenuCell.m */; };
@@ -26,6 +31,13 @@
 
 /* Begin PBXFileReference section */
 		111F9F2BB6CFC58E1EB90DDA /* Pods-MyTyles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTyles.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTyles/Pods-MyTyles.debug.xcconfig"; sourceTree = "<group>"; };
+		B6063A071E73C57A00A05187 /* LeftSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftSlider.h; path = "Left Slider/LeftSlider.h"; sourceTree = "<group>"; };
+		B6063A081E73C57A00A05187 /* LeftSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftSlider.m; path = "Left Slider/LeftSlider.m"; sourceTree = "<group>"; };
+		B6063A091E73C57A00A05187 /* LeftSlider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeftSlider.xib; path = "Left Slider/LeftSlider.xib"; sourceTree = "<group>"; };
+		B6063A0C1E73CF1600A05187 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B6063A0E1E73CF3200A05187 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6063A101E73CF7300A05187 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B6063A131E73D9BF00A05187 /* Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.pch; sourceTree = "<group>"; };
 		B65532761E614DF70002A71D /* MyTyles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTyles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B655327A1E614DF70002A71D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B655327C1E614DF70002A71D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6063A111E73CF7300A05187 /* CoreGraphics.framework in Frameworks */,
+				B6063A0F1E73CF3200A05187 /* Foundation.framework in Frameworks */,
+				B6063A0D1E73CF1600A05187 /* UIKit.framework in Frameworks */,
 				D1A788BD2A452C4576E5BDCC /* libPods-MyTyles.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,9 +84,22 @@
 		34B205379AB833665C39B457 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6063A101E73CF7300A05187 /* CoreGraphics.framework */,
+				B6063A0E1E73CF3200A05187 /* Foundation.framework */,
+				B6063A0C1E73CF1600A05187 /* UIKit.framework */,
 				D2FC36915ED0934C04F93B33 /* libPods-MyTyles.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6063A061E73C53900A05187 /* Left Slider */ = {
+			isa = PBXGroup;
+			children = (
+				B6063A071E73C57A00A05187 /* LeftSlider.h */,
+				B6063A081E73C57A00A05187 /* LeftSlider.m */,
+				B6063A091E73C57A00A05187 /* LeftSlider.xib */,
+			);
+			name = "Left Slider";
 			sourceTree = "<group>";
 		};
 		B655326D1E614DF70002A71D = {
@@ -95,6 +123,7 @@
 		B65532781E614DF70002A71D /* MyTyles */ = {
 			isa = PBXGroup;
 			children = (
+				B6063A061E73C53900A05187 /* Left Slider */,
 				B67962C61E61DA6200FCF6EF /* ActionBar */,
 				B67962CC1E61DE1000FCF6EF /* Custom */,
 				B67962C71E61DA6D00FCF6EF /* Networking */,
@@ -114,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				B655327A1E614DF70002A71D /* main.m */,
+				B6063A131E73D9BF00A05187 /* Header.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -245,6 +275,7 @@
 				B67962DA1E61E72B00FCF6EF /* ActionBar.xib in Resources */,
 				B65532861E614DF70002A71D /* Assets.xcassets in Resources */,
 				B67962C51E615B8400FCF6EF /* HomeViewController.xib in Resources */,
+				B6063A0B1E73C57B00A05187 /* LeftSlider.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,15 +334,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B655327B1E614DF70002A71D /* main.m in Sources */,
+				B655327E1E614DF70002A71D /* AppDelegate.m in Sources */,
+				B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */,
+				B6063A0A1E73C57B00A05187 /* LeftSlider.m in Sources */,
+				B6063A121E73D19F00A05187 /* Constant.m in Sources */,
 				B67962D21E61E1D500FCF6EF /* UIColor+commonColor.m in Sources */,
 				B67962D81E61E6FB00FCF6EF /* ActionBar.m in Sources */,
 				B67962CB1E61DBF200FCF6EF /* WebServiceController.m in Sources */,
-				B67962D51E61E25A00FCF6EF /* Constant.m in Sources */,
-				B655327E1E614DF70002A71D /* AppDelegate.m in Sources */,
-				B655327B1E614DF70002A71D /* main.m in Sources */,
 				B67962CF1E61DFEF00FCF6EF /* CustomActivityIndicatorView.m in Sources */,
 				B67962DE1E61ECB400FCF6EF /* HomeMenuCell.m in Sources */,
-				B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +455,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MyTyles/Header.pch;
 				INFOPLIST_FILE = MyTyles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mytyles.MyTyles;
@@ -436,6 +470,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MyTyles/Header.pch;
 				INFOPLIST_FILE = MyTyles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mytyles.MyTyles;
