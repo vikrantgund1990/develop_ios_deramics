@@ -29,9 +29,9 @@
                                 <rect key="frame" x="0.0" y="80" width="375" height="39.5"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.61176470589999998" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kitchen Tiles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="7St-Fh-Xxv">
-                                <rect key="frame" x="0.0" y="80" width="375" height="39.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kitchen Tiles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="7St-Fh-Xxv">
+                                <rect key="frame" x="15" y="80" width="345" height="39.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -40,9 +40,9 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="7St-Fh-Xxv" secondAttribute="bottom" id="50Y-TD-MgK"/>
                             <constraint firstItem="vcj-bR-Rzb" firstAttribute="leading" secondItem="dLC-p6-idz" secondAttribute="leading" id="75O-Ii-8ou"/>
-                            <constraint firstAttribute="trailing" secondItem="7St-Fh-Xxv" secondAttribute="trailing" id="EPJ-AZ-m5L"/>
+                            <constraint firstAttribute="trailing" secondItem="7St-Fh-Xxv" secondAttribute="trailing" constant="15" id="EPJ-AZ-m5L"/>
                             <constraint firstItem="vcj-bR-Rzb" firstAttribute="height" secondItem="dLC-p6-idz" secondAttribute="height" multiplier="0.33" id="HeI-Pd-6SZ"/>
-                            <constraint firstItem="7St-Fh-Xxv" firstAttribute="leading" secondItem="dLC-p6-idz" secondAttribute="leading" id="OKX-rn-2cu"/>
+                            <constraint firstItem="7St-Fh-Xxv" firstAttribute="leading" secondItem="dLC-p6-idz" secondAttribute="leading" constant="15" id="OKX-rn-2cu"/>
                             <constraint firstItem="hgh-pr-Vbx" firstAttribute="leading" secondItem="dLC-p6-idz" secondAttribute="leading" id="TyP-Lc-6WH"/>
                             <constraint firstAttribute="bottom" secondItem="vcj-bR-Rzb" secondAttribute="bottom" id="Xum-SV-qeG"/>
                             <constraint firstAttribute="trailing" secondItem="vcj-bR-Rzb" secondAttribute="trailing" id="c6V-ng-2zw"/>
@@ -51,7 +51,6 @@
                             <constraint firstItem="vcj-bR-Rzb" firstAttribute="width" secondItem="dLC-p6-idz" secondAttribute="width" id="mPC-DH-duF"/>
                             <constraint firstAttribute="trailing" secondItem="hgh-pr-Vbx" secondAttribute="trailing" id="rLn-N0-6rd"/>
                             <constraint firstItem="hgh-pr-Vbx" firstAttribute="top" secondItem="dLC-p6-idz" secondAttribute="top" id="vTC-bv-T1c"/>
-                            <constraint firstItem="7St-Fh-Xxv" firstAttribute="width" secondItem="vcj-bR-Rzb" secondAttribute="width" id="y9g-y3-Kao"/>
                         </constraints>
                     </view>
                 </subviews>
