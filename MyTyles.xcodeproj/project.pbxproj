@@ -15,6 +15,10 @@
 		B6063A121E73D19F00A05187 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962D41E61E25A00FCF6EF /* Constant.m */; };
 		B6063A171E73F89D00A05187 /* LeftSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A151E73F89D00A05187 /* LeftSliderCell.m */; };
 		B6063A181E73F89D00A05187 /* LeftSliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A161E73F89D00A05187 /* LeftSliderCell.xib */; };
+		B6063A1C1E75280A00A05187 /* WallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A1A1E75280A00A05187 /* WallVC.m */; };
+		B6063A1D1E75280A00A05187 /* WallVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A1B1E75280A00A05187 /* WallVC.xib */; };
+		B6063A211E75283800A05187 /* FloorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A1F1E75283800A05187 /* FloorVC.m */; };
+		B6063A221E75283800A05187 /* FloorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A201E75283800A05187 /* FloorVC.xib */; };
 		B655327B1E614DF70002A71D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327A1E614DF70002A71D /* main.m */; };
 		B655327E1E614DF70002A71D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327D1E614DF70002A71D /* AppDelegate.m */; };
 		B65532861E614DF70002A71D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65532851E614DF70002A71D /* Assets.xcassets */; };
@@ -43,6 +47,12 @@
 		B6063A141E73F89D00A05187 /* LeftSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftSliderCell.h; path = "Left Slider/LeftSliderCell.h"; sourceTree = "<group>"; };
 		B6063A151E73F89D00A05187 /* LeftSliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftSliderCell.m; path = "Left Slider/LeftSliderCell.m"; sourceTree = "<group>"; };
 		B6063A161E73F89D00A05187 /* LeftSliderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeftSliderCell.xib; path = "Left Slider/LeftSliderCell.xib"; sourceTree = "<group>"; };
+		B6063A191E75280A00A05187 /* WallVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WallVC.h; path = "Left Slider/WallVC.h"; sourceTree = "<group>"; };
+		B6063A1A1E75280A00A05187 /* WallVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WallVC.m; path = "Left Slider/WallVC.m"; sourceTree = "<group>"; };
+		B6063A1B1E75280A00A05187 /* WallVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WallVC.xib; path = "Left Slider/WallVC.xib"; sourceTree = "<group>"; };
+		B6063A1E1E75283800A05187 /* FloorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FloorVC.h; path = "Left Slider/FloorVC.h"; sourceTree = "<group>"; };
+		B6063A1F1E75283800A05187 /* FloorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FloorVC.m; path = "Left Slider/FloorVC.m"; sourceTree = "<group>"; };
+		B6063A201E75283800A05187 /* FloorVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FloorVC.xib; path = "Left Slider/FloorVC.xib"; sourceTree = "<group>"; };
 		B65532761E614DF70002A71D /* MyTyles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTyles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B655327A1E614DF70002A71D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B655327C1E614DF70002A71D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +116,12 @@
 				B6063A141E73F89D00A05187 /* LeftSliderCell.h */,
 				B6063A151E73F89D00A05187 /* LeftSliderCell.m */,
 				B6063A161E73F89D00A05187 /* LeftSliderCell.xib */,
+				B6063A191E75280A00A05187 /* WallVC.h */,
+				B6063A1A1E75280A00A05187 /* WallVC.m */,
+				B6063A1B1E75280A00A05187 /* WallVC.xib */,
+				B6063A1E1E75283800A05187 /* FloorVC.h */,
+				B6063A1F1E75283800A05187 /* FloorVC.m */,
+				B6063A201E75283800A05187 /* FloorVC.xib */,
 			);
 			name = "Left Slider";
 			sourceTree = "<group>";
@@ -278,10 +294,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6063A221E75283800A05187 /* FloorVC.xib in Resources */,
 				B67962DF1E61ECB400FCF6EF /* HomeMenuCell.xib in Resources */,
 				B65532891E614DF70002A71D /* LaunchScreen.storyboard in Resources */,
 				B67962DA1E61E72B00FCF6EF /* ActionBar.xib in Resources */,
 				B6063A181E73F89D00A05187 /* LeftSliderCell.xib in Resources */,
+				B6063A1D1E75280A00A05187 /* WallVC.xib in Resources */,
 				B65532861E614DF70002A71D /* Assets.xcassets in Resources */,
 				B67962C51E615B8400FCF6EF /* HomeViewController.xib in Resources */,
 				B6063A0B1E73C57B00A05187 /* LeftSlider.xib in Resources */,
@@ -343,7 +361,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6063A1C1E75280A00A05187 /* WallVC.m in Sources */,
 				B655327B1E614DF70002A71D /* main.m in Sources */,
+				B6063A211E75283800A05187 /* FloorVC.m in Sources */,
 				B6063A171E73F89D00A05187 /* LeftSliderCell.m in Sources */,
 				B655327E1E614DF70002A71D /* AppDelegate.m in Sources */,
 				B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */,

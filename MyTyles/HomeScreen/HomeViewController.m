@@ -26,11 +26,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    ActionBar *actionBar=[[ActionBar alloc]init:@"ActionBar" callingView:self];
+    ActionBar *actionBar=[[ActionBar alloc]init:@"Ceramics" callingView:self];
      [self.view addSubview:actionBar];
+    
     AppDelegate *appDelegate=DELEGATE;
     appDelegate.holderStack=[[NSMutableArray alloc]init];
     [appDelegate.holderStack addObject:self];
+    
     productArray =[[NSArray alloc]initWithObjects:@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",nil];
      ImageArray =[[NSArray alloc]initWithObjects:@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",nil];
      [tblView registerNib:[UINib nibWithNibName:@"HomeMenuCell" bundle:nil] forCellReuseIdentifier:@"HomeMenuCell"];

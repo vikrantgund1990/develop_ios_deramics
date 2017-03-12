@@ -21,7 +21,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ceramics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dti-yP-gQB">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -29,7 +29,7 @@
                     <color key="backgroundColor" red="0.95294117647058818" green="0.61176470588235299" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbD-gU-lyb">
-                    <rect key="frame" x="10" y="0.0" width="50" height="60"/>
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="60"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="YUq-ao-U88"/>
                         <constraint firstAttribute="width" constant="50" id="umj-pH-BgQ"/>
@@ -49,8 +49,9 @@
                 <constraint firstAttribute="bottom" secondItem="VbD-gU-lyb" secondAttribute="bottom" id="Tb3-tZ-05c"/>
                 <constraint firstAttribute="bottom" secondItem="lwF-K0-DpJ" secondAttribute="bottom" id="dXb-pR-uoX"/>
                 <constraint firstItem="lwF-K0-DpJ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="gAD-5K-sRm"/>
-                <constraint firstItem="VbD-gU-lyb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="mko-L5-b9S"/>
+                <constraint firstItem="VbD-gU-lyb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mko-L5-b9S"/>
             </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="lblTitle" destination="dti-yP-gQB" id="Lc0-Wc-ebA"/>

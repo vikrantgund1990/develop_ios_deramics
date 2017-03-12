@@ -11,4 +11,5 @@
 @interface ActionBar : UIView
 @property (nonatomic)IBOutlet UILabel *lblTitle;
 - (id)init:(NSString *)title callingView:(UIViewController*)callingView;
++(void)leftSliderToggle;
 @end

@@ -31,9 +31,9 @@ AppDelegate *appDelegateSharedObj;
  self = [super initWithFrame:frame];
  if (self) {
      NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ActionBar" owner:self options:nil];
+      view = [nib objectAtIndex:0];
     view.backgroundColor = [UIColor appColor];
      view.lblTitle.text=title;
-     view = [nib objectAtIndex:0];
      if(view!=nil)
          [self addSubview:view];
  }
@@ -41,9 +41,12 @@ AppDelegate *appDelegateSharedObj;
  }
 
 -(IBAction)leftMenu:(id)sender{
+    [ActionBar leftSliderToggle];
+
+}
++(void)leftSliderToggle{
     UIViewController *con = [appDelegateSharedObj.holderStack lastObject];
     [con.menuContainerViewController toggleLeftSideMenuCompletion:^{
     }];
-
 }
 @end

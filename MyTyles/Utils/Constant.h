@@ -10,4 +10,5 @@
 
 @interface Constant : NSObject
 extern NSString *BASE_URL;
++(void)ReDirectToHome;
 @end

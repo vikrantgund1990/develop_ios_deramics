@@ -9,6 +9,11 @@
 #import "LeftSlider.h"
 #import "UIColor+commonColor.h"
 #import "LeftSliderCell.h"
+#import "WallVC.h"
+#import "FloorVC.h"
+#import "Constant.h"
+#import "ActionBar.h"
+
 @interface LeftSlider (){
     IBOutlet UITableView *tblView;
     NSArray *tblArray;
@@ -38,7 +43,32 @@
     return leftSliderCell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+     [ActionBar leftSliderToggle];
     
+    AppDelegate *appDelegateSharedObj=DELEGATE;
+    UIViewController *con = [appDelegateSharedObj.holderStack lastObject];
+    UIViewController *viewCon;
+    
+    int option=(int)indexPath.row;
+    switch (option) {
+        case 0:{
+            [Constant ReDirectToHome];
+            break;
+        }
+        case 1:{
+           // wall
+            viewCon=[[WallVC alloc]initWithNibName:@"WallVC" bundle:nil];
+            break;
+        }
+        case 2:{
+            // floor
+            viewCon=[[FloorVC alloc]initWithNibName:@"FloorVC" bundle:nil];
+            break;
+        }
+        default:
+            break;
+    }
+   [[con navigationController]pushViewController:viewCon animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
