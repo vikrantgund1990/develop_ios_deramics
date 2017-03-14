@@ -72,7 +72,7 @@ static CustomActivityIndicatorView *customActivityIndicatorView;
     [[manager dataTaskWithRequest:req completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         [customActivityIndicatorView stopCustomIndicatorView];
         if (!error) {
-           
+            responses(responseObject);
         } else {
             //NSLog(@"Error: %@, %@, %@", error, response, responseObject);
         }

@@ -19,6 +19,8 @@
 		B6063A1D1E75280A00A05187 /* WallVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A1B1E75280A00A05187 /* WallVC.xib */; };
 		B6063A211E75283800A05187 /* FloorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A1F1E75283800A05187 /* FloorVC.m */; };
 		B6063A221E75283800A05187 /* FloorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A201E75283800A05187 /* FloorVC.xib */; };
+		B6063A261E77ABB800A05187 /* ProductListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A241E77ABB800A05187 /* ProductListCell.m */; };
+		B6063A271E77ABB800A05187 /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A251E77ABB800A05187 /* ProductListCell.xib */; };
 		B655327B1E614DF70002A71D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327A1E614DF70002A71D /* main.m */; };
 		B655327E1E614DF70002A71D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327D1E614DF70002A71D /* AppDelegate.m */; };
 		B65532861E614DF70002A71D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65532851E614DF70002A71D /* Assets.xcassets */; };
@@ -53,6 +55,9 @@
 		B6063A1E1E75283800A05187 /* FloorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FloorVC.h; path = "Left Slider/FloorVC.h"; sourceTree = "<group>"; };
 		B6063A1F1E75283800A05187 /* FloorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FloorVC.m; path = "Left Slider/FloorVC.m"; sourceTree = "<group>"; };
 		B6063A201E75283800A05187 /* FloorVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FloorVC.xib; path = "Left Slider/FloorVC.xib"; sourceTree = "<group>"; };
+		B6063A231E77ABB800A05187 /* ProductListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductListCell.h; path = "Left Slider/ProductListCell.h"; sourceTree = "<group>"; };
+		B6063A241E77ABB800A05187 /* ProductListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductListCell.m; path = "Left Slider/ProductListCell.m"; sourceTree = "<group>"; };
+		B6063A251E77ABB800A05187 /* ProductListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductListCell.xib; path = "Left Slider/ProductListCell.xib"; sourceTree = "<group>"; };
 		B65532761E614DF70002A71D /* MyTyles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTyles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B655327A1E614DF70002A71D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B655327C1E614DF70002A71D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +127,9 @@
 				B6063A1E1E75283800A05187 /* FloorVC.h */,
 				B6063A1F1E75283800A05187 /* FloorVC.m */,
 				B6063A201E75283800A05187 /* FloorVC.xib */,
+				B6063A231E77ABB800A05187 /* ProductListCell.h */,
+				B6063A241E77ABB800A05187 /* ProductListCell.m */,
+				B6063A251E77ABB800A05187 /* ProductListCell.xib */,
 			);
 			name = "Left Slider";
 			sourceTree = "<group>";
@@ -295,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6063A221E75283800A05187 /* FloorVC.xib in Resources */,
+				B6063A271E77ABB800A05187 /* ProductListCell.xib in Resources */,
 				B67962DF1E61ECB400FCF6EF /* HomeMenuCell.xib in Resources */,
 				B65532891E614DF70002A71D /* LaunchScreen.storyboard in Resources */,
 				B67962DA1E61E72B00FCF6EF /* ActionBar.xib in Resources */,
@@ -368,6 +377,7 @@
 				B655327E1E614DF70002A71D /* AppDelegate.m in Sources */,
 				B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */,
 				B6063A0A1E73C57B00A05187 /* LeftSlider.m in Sources */,
+				B6063A261E77ABB800A05187 /* ProductListCell.m in Sources */,
 				B6063A121E73D19F00A05187 /* Constant.m in Sources */,
 				B67962D21E61E1D500FCF6EF /* UIColor+commonColor.m in Sources */,
 				B67962D81E61E6FB00FCF6EF /* ActionBar.m in Sources */,
