@@ -14,5 +14,6 @@
 @property (strong, nonatomic) UIWindow *window;
 @property(strong,nonatomic) MFSideMenuContainerViewController *slider;
 @property (retain, nonatomic) NSMutableArray *holderStack;
+-(void)startMainScreen;
 @end
 

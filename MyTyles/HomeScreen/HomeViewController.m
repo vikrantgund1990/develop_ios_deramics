@@ -64,7 +64,7 @@
 //        NSLog(@"Error: %@", error);
 //    }];
     [homeMenuCell.imgView setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://images.ceramicskart.com/img/home/%@",[ImageArray objectAtIndex:indexPath.row]]]  placeholderImage:[UIImage imageNamed:@"stub_image"]];
-       [homeMenuCell.viewBack setBackgroundColor:[UIColor appColor]];
+       [homeMenuCell.viewBack setBackgroundColor:[UIColor whiteColor]];
     homeMenuCell.selectionStyle=UITableViewCellSelectionStyleNone;
     return homeMenuCell;
 }
@@ -86,6 +86,6 @@
 }
 */
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return ([Constant returnHeight]*0.6)/productArray.count;
+    return [Constant returnHeight]*0.3;
 }
 @end

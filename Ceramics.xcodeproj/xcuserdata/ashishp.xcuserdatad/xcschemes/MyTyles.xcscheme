@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B65532751E614DF70002A71D"
-               BuildableName = "MyTyles.app"
-               BlueprintName = "MyTyles"
-               ReferencedContainer = "container:MyTyles.xcodeproj">
+               BuildableName = ".app"
+               BlueprintName = "Ceramics"
+               ReferencedContainer = "container:Ceramics.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B65532751E614DF70002A71D"
-            BuildableName = "MyTyles.app"
-            BlueprintName = "MyTyles"
-            ReferencedContainer = "container:MyTyles.xcodeproj">
+            BuildableName = ".app"
+            BlueprintName = "Ceramics"
+            ReferencedContainer = "container:Ceramics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B65532751E614DF70002A71D"
-            BuildableName = "MyTyles.app"
-            BlueprintName = "MyTyles"
-            ReferencedContainer = "container:MyTyles.xcodeproj">
+            BuildableName = ".app"
+            BlueprintName = "Ceramics"
+            ReferencedContainer = "container:Ceramics.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B65532751E614DF70002A71D"
-            BuildableName = "MyTyles.app"
-            BlueprintName = "MyTyles"
-            ReferencedContainer = "container:MyTyles.xcodeproj">
+            BuildableName = ".app"
+            BlueprintName = "Ceramics"
+            ReferencedContainer = "container:Ceramics.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

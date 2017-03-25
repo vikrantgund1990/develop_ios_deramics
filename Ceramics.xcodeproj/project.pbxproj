@@ -22,6 +22,9 @@
 		B6063A261E77ABB800A05187 /* ProductListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A241E77ABB800A05187 /* ProductListCell.m */; };
 		B6063A271E77ABB800A05187 /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A251E77ABB800A05187 /* ProductListCell.xib */; };
 		B6063A2A1E7FBF9800A05187 /* MaxGrayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A291E7FBF9800A05187 /* MaxGrayButton.m */; };
+		B6063A5E1E8666BE00A05187 /* UserDefults.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A5D1E8666BE00A05187 /* UserDefults.m */; };
+		B6063A621E866EDB00A05187 /* SplashScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A601E866EDB00A05187 /* SplashScreenVC.m */; };
+		B6063A631E866EDB00A05187 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A611E866EDB00A05187 /* SplashScreenVC.xib */; };
 		B655327B1E614DF70002A71D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327A1E614DF70002A71D /* main.m */; };
 		B655327E1E614DF70002A71D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327D1E614DF70002A71D /* AppDelegate.m */; };
 		B65532861E614DF70002A71D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65532851E614DF70002A71D /* Assets.xcassets */; };
@@ -61,6 +64,11 @@
 		B6063A251E77ABB800A05187 /* ProductListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductListCell.xib; path = "Left Slider/ProductListCell.xib"; sourceTree = "<group>"; };
 		B6063A281E7FBF9800A05187 /* MaxGrayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaxGrayButton.h; path = Custom/MaxGrayButton.h; sourceTree = "<group>"; };
 		B6063A291E7FBF9800A05187 /* MaxGrayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaxGrayButton.m; path = Custom/MaxGrayButton.m; sourceTree = "<group>"; };
+		B6063A5C1E8666BE00A05187 /* UserDefults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDefults.h; path = Utils/UserDefults.h; sourceTree = "<group>"; };
+		B6063A5D1E8666BE00A05187 /* UserDefults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDefults.m; path = Utils/UserDefults.m; sourceTree = "<group>"; };
+		B6063A5F1E866EDB00A05187 /* SplashScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreenVC.h; sourceTree = "<group>"; };
+		B6063A601E866EDB00A05187 /* SplashScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashScreenVC.m; sourceTree = "<group>"; };
+		B6063A611E866EDB00A05187 /* SplashScreenVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = "<group>"; };
 		B65532761E614DF70002A71D /* MyTyles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTyles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B655327A1E614DF70002A71D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B655327C1E614DF70002A71D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -166,6 +174,9 @@
 				B67962C01E615B4E00FCF6EF /* HomeScreen */,
 				B655327C1E614DF70002A71D /* AppDelegate.h */,
 				B655327D1E614DF70002A71D /* AppDelegate.m */,
+				B6063A5F1E866EDB00A05187 /* SplashScreenVC.h */,
+				B6063A601E866EDB00A05187 /* SplashScreenVC.m */,
+				B6063A611E866EDB00A05187 /* SplashScreenVC.xib */,
 				B65532851E614DF70002A71D /* Assets.xcassets */,
 				B65532871E614DF70002A71D /* LaunchScreen.storyboard */,
 				B655328A1E614DF70002A71D /* Info.plist */,
@@ -220,6 +231,8 @@
 			children = (
 				B67962D31E61E25A00FCF6EF /* Constant.h */,
 				B67962D41E61E25A00FCF6EF /* Constant.m */,
+				B6063A5C1E8666BE00A05187 /* UserDefults.h */,
+				B6063A5D1E8666BE00A05187 /* UserDefults.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -249,9 +262,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B65532751E614DF70002A71D /* MyTyles */ = {
+		B65532751E614DF70002A71D /* Ceramics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B655328D1E614DF70002A71D /* Build configuration list for PBXNativeTarget "MyTyles" */;
+			buildConfigurationList = B655328D1E614DF70002A71D /* Build configuration list for PBXNativeTarget "Ceramics" */;
 			buildPhases = (
 				E28A2FF5AA4D1EEC266809FD /* [CP] Check Pods Manifest.lock */,
 				B65532721E614DF70002A71D /* Sources */,
@@ -264,7 +277,7 @@
 			);
 			dependencies = (
 			);
-			name = MyTyles;
+			name = Ceramics;
 			productName = MyTyles;
 			productReference = B65532761E614DF70002A71D /* MyTyles.app */;
 			productType = "com.apple.product-type.application";
@@ -285,7 +298,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B65532711E614DF70002A71D /* Build configuration list for PBXProject "MyTyles" */;
+			buildConfigurationList = B65532711E614DF70002A71D /* Build configuration list for PBXProject "Ceramics" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -298,7 +311,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B65532751E614DF70002A71D /* MyTyles */,
+				B65532751E614DF70002A71D /* Ceramics */,
 			);
 		};
 /* End PBXProject section */
@@ -313,6 +326,7 @@
 				B67962DF1E61ECB400FCF6EF /* HomeMenuCell.xib in Resources */,
 				B65532891E614DF70002A71D /* LaunchScreen.storyboard in Resources */,
 				B67962DA1E61E72B00FCF6EF /* ActionBar.xib in Resources */,
+				B6063A631E866EDB00A05187 /* SplashScreenVC.xib in Resources */,
 				B6063A181E73F89D00A05187 /* LeftSliderCell.xib in Resources */,
 				B6063A1D1E75280A00A05187 /* WallVC.xib in Resources */,
 				B65532861E614DF70002A71D /* Assets.xcassets in Resources */,
@@ -378,6 +392,7 @@
 			files = (
 				B6063A1C1E75280A00A05187 /* WallVC.m in Sources */,
 				B655327B1E614DF70002A71D /* main.m in Sources */,
+				B6063A621E866EDB00A05187 /* SplashScreenVC.m in Sources */,
 				B6063A211E75283800A05187 /* FloorVC.m in Sources */,
 				B6063A171E73F89D00A05187 /* LeftSliderCell.m in Sources */,
 				B655327E1E614DF70002A71D /* AppDelegate.m in Sources */,
@@ -390,6 +405,7 @@
 				B67962D81E61E6FB00FCF6EF /* ActionBar.m in Sources */,
 				B67962CB1E61DBF200FCF6EF /* WebServiceController.m in Sources */,
 				B67962CF1E61DFEF00FCF6EF /* CustomActivityIndicatorView.m in Sources */,
+				B6063A5E1E8666BE00A05187 /* UserDefults.m in Sources */,
 				B67962DE1E61ECB400FCF6EF /* HomeMenuCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,7 +525,7 @@
 				INFOPLIST_FILE = MyTyles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ceramics.MyTyles;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MyTyles;
 				PROVISIONING_PROFILE = "275f803f-c232-4e85-8e4c-94041f146c9e";
 				PROVISIONING_PROFILE_SPECIFIER = "Ceramics Development 18 Mar";
 			};
@@ -528,7 +544,7 @@
 				INFOPLIST_FILE = MyTyles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ceramics.MyTyles;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MyTyles;
 				PROVISIONING_PROFILE = "275f803f-c232-4e85-8e4c-94041f146c9e";
 				PROVISIONING_PROFILE_SPECIFIER = "Ceramics Development 18 Mar";
 			};
@@ -537,7 +553,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B65532711E614DF70002A71D /* Build configuration list for PBXProject "MyTyles" */ = {
+		B65532711E614DF70002A71D /* Build configuration list for PBXProject "Ceramics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B655328B1E614DF70002A71D /* Debug */,
@@ -546,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B655328D1E614DF70002A71D /* Build configuration list for PBXNativeTarget "MyTyles" */ = {
+		B655328D1E614DF70002A71D /* Build configuration list for PBXNativeTarget "Ceramics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B655328E1E614DF70002A71D /* Debug */,

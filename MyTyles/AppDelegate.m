@@ -12,18 +12,27 @@
 #import "MFSideMenuContainerViewController.h"
 #import "Constant.h"
 #import "MFSideMenu.h"
-@interface AppDelegate ()
+#import <CoreLocation/CoreLocation.h>
+#import "UserDefults.h"
+#import "SplashScreenVC.h"
+
+@interface AppDelegate (){
+    bool isLocationServiceOff,isAlertClicked;
+}
+@property (nonatomic,retain)CLLocationManager *location;
+@property (nonatomic,retain)CLPlacemark *placemark;
+
 
 @end
 
 @implementation AppDelegate
-
+CLLocationManager *locationManager;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     HomeViewController *homeViewController=[[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
-    
+    SplashScreenVC *splashScreenVC = [[SplashScreenVC alloc]initWithNibName:@"SplashScreenVC" bundle:nil];
     UINavigationController *navController=[[UINavigationController alloc]initWithRootViewController:homeViewController];
     UINavigationBar *navBar = navController.navigationBar;
     [navBar setHidden:YES];
@@ -35,17 +44,36 @@
     self.slider=[MFSideMenuContainerViewController containerWithCenterViewController:navController leftMenuViewController:leftSlider rightMenuViewController:nil];
     [self.slider setPanMode:MFSideMenuPanModeNone];
     
-  [UIView transitionWithView:self.window duration:0.5 options:UIViewAnimationOptionCurveEaseIn animations:^{
-        
-        self.window.rootViewController = self.slider;
-        
-    } completion:nil];
+    //Location
+     isLocationServiceOff=YES;
+    if ([CLLocationManager locationServicesEnabled]){
+        isLocationServiceOff=NO;
+    }
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    if([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]){
+        [locationManager requestWhenInUseAuthorization];
+    }
+    isAlertClicked=NO;
+   
+    [locationManager startUpdatingLocation];
+    
+     self.window.rootViewController=splashScreenVC;
     
     [self.window makeKeyAndVisible];
     
     return YES;
 }
-
+-(void)startMainScreen{
+    if(isAlertClicked||!isLocationServiceOff){
+    [UIView transitionWithView:self.window duration:0.5 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        self.window.rootViewController = self.slider;
+        
+    } completion:nil];
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -82,5 +110,103 @@
     UIViewController *con = [_holderStack lastObject];
     [con.menuContainerViewController setMenuState:MFSideMenuStateClosed];
 }
+#pragma mark - Device Location
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    
+    [manager stopUpdatingLocation];
+    
+    switch([error code])
+    {
+        case kCLAuthorizationStatusNotDetermined:
+        case kCLErrorNetwork: // general, network-related error
+        {
+            isLocationServiceOff=YES;
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"please check your network connection or that you are not in airplane mode" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            [alert show];
+        }
+            break;
+        case kCLErrorDenied:{
+            isLocationServiceOff=YES;
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Services Disabled" message:@"You can enable Location for Ceramics from Settings > Privacy > Location Services" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            [alert show];
+            
+        }
+            break;
+        default:
+        {
+            isLocationServiceOff=NO;
+            //            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Failed to get your location" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            //            [alert show];
+        }
+            break;
+    }
+    
+}
 
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
+    
+    //    NSLog(@"didUpdateToLocation: %@", newLocation);
+    CLLocation *currentLocation = newLocation;
+    
+    if (currentLocation != nil) {
+        NSString *latString = [NSString stringWithFormat:@"%f", currentLocation.coordinate.latitude];
+        NSString *longString = [NSString stringWithFormat:@"%f", currentLocation.coordinate.longitude];
+        // storing for next time usage
+        [UserDefults saveLocationInformationLatLon:latString longitude:longString];
+        
+    }
+    
+    [locationManager stopUpdatingLocation];
+    [self GetLocationAddress];
+}
+
+-(void)GetLocationAddress{
+    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
+    //geocodelocation
+    
+    [geocoder reverseGeocodeLocation:locationManager.location completionHandler:
+     ^(NSArray *placemarks, NSError *error) {
+         
+         //Get address
+         self.placemark = [placemarks objectAtIndex:0];
+         NSString *address = [[self.placemark.addressDictionary valueForKey:@"FormattedAddressLines"] componentsJoinedByString:@", "];
+         
+         //         NSLog(@"City Name: %@",[placemark locality]);
+         
+         [UserDefults saveLocationInformationAddrCity:address city:[self.placemark locality]];
+         
+     }];
+}
+
+//>= iOS8
+-(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
+    switch (status) {
+        case kCLAuthorizationStatusNotDetermined:
+        case kCLAuthorizationStatusRestricted:
+        case kCLAuthorizationStatusDenied:
+        {
+            // do some error handling
+        }
+            break;
+        default:{
+            [locationManager startUpdatingLocation];
+        }
+            break;
+    }
+}
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
+    if(buttonIndex==1){
+       // tag 1 indicate permission given
+        alertView.tag=1;
+        isAlertClicked=YES;
+        [self startMainScreen];
+    }
+    else{
+        //tag 2 indicate permision denied
+        alertView.tag=2;
+        isAlertClicked=YES;
+        [self startMainScreen];
+    }
+}
 @end
