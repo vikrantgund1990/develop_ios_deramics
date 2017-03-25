@@ -21,6 +21,7 @@
 		B6063A221E75283800A05187 /* FloorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A201E75283800A05187 /* FloorVC.xib */; };
 		B6063A261E77ABB800A05187 /* ProductListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A241E77ABB800A05187 /* ProductListCell.m */; };
 		B6063A271E77ABB800A05187 /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A251E77ABB800A05187 /* ProductListCell.xib */; };
+		B6063A2A1E7FBF9800A05187 /* MaxGrayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A291E7FBF9800A05187 /* MaxGrayButton.m */; };
 		B655327B1E614DF70002A71D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327A1E614DF70002A71D /* main.m */; };
 		B655327E1E614DF70002A71D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327D1E614DF70002A71D /* AppDelegate.m */; };
 		B65532861E614DF70002A71D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65532851E614DF70002A71D /* Assets.xcassets */; };
@@ -58,6 +59,8 @@
 		B6063A231E77ABB800A05187 /* ProductListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductListCell.h; path = "Left Slider/ProductListCell.h"; sourceTree = "<group>"; };
 		B6063A241E77ABB800A05187 /* ProductListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductListCell.m; path = "Left Slider/ProductListCell.m"; sourceTree = "<group>"; };
 		B6063A251E77ABB800A05187 /* ProductListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductListCell.xib; path = "Left Slider/ProductListCell.xib"; sourceTree = "<group>"; };
+		B6063A281E7FBF9800A05187 /* MaxGrayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaxGrayButton.h; path = Custom/MaxGrayButton.h; sourceTree = "<group>"; };
+		B6063A291E7FBF9800A05187 /* MaxGrayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaxGrayButton.m; path = Custom/MaxGrayButton.m; sourceTree = "<group>"; };
 		B65532761E614DF70002A71D /* MyTyles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTyles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B655327A1E614DF70002A71D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B655327C1E614DF70002A71D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 		B67962CC1E61DE1000FCF6EF /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				B6063A281E7FBF9800A05187 /* MaxGrayButton.h */,
+				B6063A291E7FBF9800A05187 /* MaxGrayButton.m */,
 				B67962CD1E61DFEF00FCF6EF /* CustomActivityIndicatorView.h */,
 				B67962CE1E61DFEF00FCF6EF /* CustomActivityIndicatorView.m */,
 				B67962D01E61E1D500FCF6EF /* UIColor+commonColor.h */,
@@ -275,7 +280,8 @@
 				TargetAttributes = {
 					B65532751E614DF70002A71D = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = ZP62G7BHL2;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -375,6 +381,7 @@
 				B6063A211E75283800A05187 /* FloorVC.m in Sources */,
 				B6063A171E73F89D00A05187 /* LeftSliderCell.m in Sources */,
 				B655327E1E614DF70002A71D /* AppDelegate.m in Sources */,
+				B6063A2A1E7FBF9800A05187 /* MaxGrayButton.m in Sources */,
 				B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */,
 				B6063A0A1E73C57B00A05187 /* LeftSlider.m in Sources */,
 				B6063A261E77ABB800A05187 /* ProductListCell.m in Sources */,
@@ -495,12 +502,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZP62G7BHL2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MyTyles/Header.pch;
 				INFOPLIST_FILE = MyTyles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mytyles.MyTyles;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceramics.MyTyles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "275f803f-c232-4e85-8e4c-94041f146c9e";
+				PROVISIONING_PROFILE_SPECIFIER = "Ceramics Development 18 Mar";
 			};
 			name = Debug;
 		};
@@ -510,12 +521,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZP62G7BHL2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MyTyles/Header.pch;
 				INFOPLIST_FILE = MyTyles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mytyles.MyTyles;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceramics.MyTyles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "275f803f-c232-4e85-8e4c-94041f146c9e";
+				PROVISIONING_PROFILE_SPECIFIER = "Ceramics Development 18 Mar";
 			};
 			name = Release;
 		};

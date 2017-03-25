@@ -13,6 +13,7 @@
 #import "ActionBar.h"
 #import "Constant.h"
 #import "MFSideMenu.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface HomeViewController ()<UITableViewDelegate>{
     IBOutlet UITableView *tblView;
@@ -33,8 +34,8 @@
     appDelegate.holderStack=[[NSMutableArray alloc]init];
     [appDelegate.holderStack addObject:self];
     
-    productArray =[[NSArray alloc]initWithObjects:@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",nil];
-     ImageArray =[[NSArray alloc]initWithObjects:@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",@"KitchenTiles",nil];
+    productArray =[[NSArray alloc]initWithObjects:@"Kitchen",@"Drawing",@"Bathroom",nil];
+    ImageArray =[[NSArray alloc]initWithObjects:@"kitchen.jpg",@"Drawing.jpg",@"Bathroom.jpeg",nil];
      [tblView registerNib:[UINib nibWithNibName:@"HomeMenuCell" bundle:nil] forCellReuseIdentifier:@"HomeMenuCell"];
 //    [[NSNotificationCenter defaultCenter] addObserver:self
 //                                             selector:@selector(menuStateEventOccurred:)
@@ -52,7 +53,18 @@
 //        homeMenuCell=[[HomeMenuCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"HomeMenuCell"];
 //    }
     homeMenuCell.lblProductName.text=[productArray objectAtIndex:indexPath.row];
-    [homeMenuCell.viewBack setBackgroundColor:[UIColor appColor]];
+   
+//    [homeMenuCell.imgView  setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://images.ceramicskart.com/img/home/%@",[ImageArray objectAtIndex:indexPath.row]]]] placeholderImage:[UIImage imageNamed:@"stub_merchandise"] success:^(NSURLRequest *request,   NSHTTPURLResponse *response, UIImage *image) {
+//        if (homeMenuCell!=NULL)
+//        {
+//            homeMenuCell.imageView.image = image;
+//            [homeMenuCell setNeedsLayout];
+//        }
+//    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+//        NSLog(@"Error: %@", error);
+//    }];
+    [homeMenuCell.imgView setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://images.ceramicskart.com/img/home/%@",[ImageArray objectAtIndex:indexPath.row]]]  placeholderImage:[UIImage imageNamed:@"stub_image"]];
+       [homeMenuCell.viewBack setBackgroundColor:[UIColor appColor]];
     homeMenuCell.selectionStyle=UITableViewCellSelectionStyleNone;
     return homeMenuCell;
 }
@@ -73,7 +85,7 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return ([Constant returnHeight]*0.6)/productArray.count;
 }
 @end

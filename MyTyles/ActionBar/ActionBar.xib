@@ -6,59 +6,79 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ActionBar">
+        <view contentMode="scaleToFill" id="goS-sJ-VWl" customClass="ActionBar">
             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwF-K0-DpJ">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGO-Gt-flx">
+                    <rect key="frame" x="0.0" y="15" width="375" height="45.5"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ceramics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dti-yP-gQB">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBJ-b5-etv" userLabel="btnBack">
+                            <rect key="frame" x="8" y="5" width="59.5" height="35.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="btnBack"/>
+                            <connections>
+                                <action selector="callBack:" destination="goS-sJ-VWl" eventType="touchDown" id="c10-9a-noi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gch-s3-7xb" userLabel="btnHomeMenu">
+                            <rect key="frame" x="8" y="5" width="48" height="35.5"/>
+                            <state key="normal" image="hamburger"/>
+                            <connections>
+                                <action selector="leftMenu:" destination="goS-sJ-VWl" eventType="touchDown" id="zYu-WQ-Au8"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ceramics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0O-mH-Cml">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" red="0.95294117647058818" green="0.61176470588235299" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
-                </view>
-                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbD-gU-lyb">
-                    <rect key="frame" x="0.0" y="0.0" width="50" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="60" id="YUq-ao-U88"/>
-                        <constraint firstAttribute="width" constant="50" id="umj-pH-BgQ"/>
+                        <constraint firstItem="gch-s3-7xb" firstAttribute="top" secondItem="UGO-Gt-flx" secondAttribute="top" constant="5" id="61a-gy-97E"/>
+                        <constraint firstItem="xBJ-b5-etv" firstAttribute="width" secondItem="UGO-Gt-flx" secondAttribute="width" multiplier="0.159" id="75n-wg-blp"/>
+                        <constraint firstItem="xBJ-b5-etv" firstAttribute="leading" secondItem="UGO-Gt-flx" secondAttribute="leading" constant="8" id="8WQ-sd-RUN"/>
+                        <constraint firstAttribute="height" constant="45" id="CeH-ww-Ljz"/>
+                        <constraint firstItem="gch-s3-7xb" firstAttribute="height" secondItem="UGO-Gt-flx" secondAttribute="height" multiplier="0.78" id="Go3-9R-BUQ"/>
+                        <constraint firstItem="gch-s3-7xb" firstAttribute="width" secondItem="UGO-Gt-flx" secondAttribute="width" multiplier="0.128" id="QKh-dv-AJz"/>
+                        <constraint firstItem="E0O-mH-Cml" firstAttribute="centerX" secondItem="UGO-Gt-flx" secondAttribute="centerX" id="VYh-4X-laS"/>
+                        <constraint firstItem="xBJ-b5-etv" firstAttribute="height" secondItem="UGO-Gt-flx" secondAttribute="height" multiplier="0.79" id="YNa-WA-sUP"/>
+                        <constraint firstItem="E0O-mH-Cml" firstAttribute="width" secondItem="UGO-Gt-flx" secondAttribute="width" id="ZKB-S8-uIf"/>
+                        <constraint firstItem="gch-s3-7xb" firstAttribute="leading" secondItem="UGO-Gt-flx" secondAttribute="leading" constant="8" id="g5h-jW-Qw9"/>
+                        <constraint firstItem="E0O-mH-Cml" firstAttribute="height" secondItem="UGO-Gt-flx" secondAttribute="height" id="l1J-y6-Vfx"/>
+                        <constraint firstItem="E0O-mH-Cml" firstAttribute="centerY" secondItem="UGO-Gt-flx" secondAttribute="centerY" id="liR-6z-dxa"/>
+                        <constraint firstItem="xBJ-b5-etv" firstAttribute="top" secondItem="UGO-Gt-flx" secondAttribute="top" constant="5" id="xxC-9W-Ska"/>
                     </constraints>
-                    <state key="normal" image="hamburger"/>
-                    <connections>
-                        <action selector="leftMenu:" destination="iN0-l3-epB" eventType="touchUpInside" id="0mv-k3-FLT"/>
-                    </connections>
-                </button>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="lwF-K0-DpJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0f1-QD-knL"/>
-                <constraint firstAttribute="trailing" secondItem="lwF-K0-DpJ" secondAttribute="trailing" id="Bw9-gb-wnB"/>
-                <constraint firstItem="VbD-gU-lyb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RBJ-Tp-n6b"/>
-                <constraint firstItem="lwF-K0-DpJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Seq-Mz-950"/>
-                <constraint firstAttribute="bottom" secondItem="VbD-gU-lyb" secondAttribute="bottom" id="Tb3-tZ-05c"/>
-                <constraint firstAttribute="bottom" secondItem="lwF-K0-DpJ" secondAttribute="bottom" id="dXb-pR-uoX"/>
-                <constraint firstItem="lwF-K0-DpJ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="gAD-5K-sRm"/>
-                <constraint firstItem="VbD-gU-lyb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mko-L5-b9S"/>
+                <constraint firstItem="UGO-Gt-flx" firstAttribute="width" secondItem="goS-sJ-VWl" secondAttribute="width" id="DVG-Rc-rCb"/>
+                <constraint firstItem="UGO-Gt-flx" firstAttribute="height" secondItem="goS-sJ-VWl" secondAttribute="height" multiplier="0.76" id="EU5-kE-EhG"/>
+                <constraint firstItem="UGO-Gt-flx" firstAttribute="top" secondItem="goS-sJ-VWl" secondAttribute="top" constant="15" id="NxE-7j-Mdb"/>
+                <constraint firstItem="UGO-Gt-flx" firstAttribute="leading" secondItem="goS-sJ-VWl" secondAttribute="leading" id="g3E-6T-7wM"/>
             </constraints>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="lblTitle" destination="dti-yP-gQB" id="Lc0-Wc-ebA"/>
+                <outlet property="btnBack" destination="xBJ-b5-etv" id="yDc-Fk-WZ4"/>
+                <outlet property="btnLeftMenu" destination="gch-s3-7xb" id="gA9-l3-5O2"/>
+                <outlet property="internalView" destination="UGO-Gt-flx" id="sRf-0J-lj2"/>
+                <outlet property="lblTitle" destination="E0O-mH-Cml" id="Pc6-C5-GCW"/>
             </connections>
+            <point key="canvasLocation" x="284" y="-26"/>
         </view>
     </objects>
     <resources>
+        <image name="btnBack" width="16" height="16"/>
         <image name="hamburger" width="24" height="21"/>
     </resources>
 </document>

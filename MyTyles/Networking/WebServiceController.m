@@ -26,13 +26,9 @@ static CustomActivityIndicatorView *customActivityIndicatorView;
 //Inititalization of Indicator View
 #pragma mark - GENERAL Initialization
 -(void)initialization:(UIViewController*)callingView isSync:(BOOL)isSync{
-    if([customActivityIndicatorView isShowingCustomIndicatorView])
-    {
-        [customActivityIndicatorView stopCustomIndicatorView];
-    }
-    customActivityIndicatorView = [[CustomActivityIndicatorView alloc]init];
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = FALSE;
+ 
     if(isSync){
+         customActivityIndicatorView = [[CustomActivityIndicatorView alloc]init];
         [callingView.view addSubview:customActivityIndicatorView];
         [customActivityIndicatorView showCustomIndicatorView:callingView];
     }
@@ -45,12 +41,14 @@ static CustomActivityIndicatorView *customActivityIndicatorView;
         AFHTTPSessionManager *manager=[[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
    
     [manager GET:strURL parameters:urlParameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+         [customActivityIndicatorView stopCustomIndicatorView];
          responses(responseObject);
-    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
         
+    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+         [customActivityIndicatorView stopCustomIndicatorView];
     }];
 
-    [customActivityIndicatorView stopCustomIndicatorView];
+   
 }
 
 -(void)PostMethod:(UIViewController*)callingView url:(NSString*)url isSync:(BOOL)isSync parameters:(NSDictionary*)urlParameters response:(void (^) (id dictObj))responses{

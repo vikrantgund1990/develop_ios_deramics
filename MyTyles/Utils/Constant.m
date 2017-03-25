@@ -22,15 +22,16 @@ NSString const *BASE_URL = @QA_URL;
 +(void)ReDirectToHome
 {
     AppDelegate *appDelegateObj=DELEGATE;
+    UIViewController *con = [appDelegateObj.holderStack lastObject];
+    [con.navigationController popToRootViewControllerAnimated:YES];
 
-    if(appDelegateObj.holderStack.count>0){
-        UIViewController *lastObj = [appDelegateObj.holderStack objectAtIndex:0];
-        [appDelegateObj.holderStack removeAllObjects];
-        [appDelegateObj.holderStack addObject:lastObj];
-    }
-    else{
-        [appDelegateObj.holderStack addObject:[HomeViewController class]];
-        
-    }
+}
++(CGFloat)returnWidth{
+    CGRect frm=[[UIScreen mainScreen]bounds];
+    return frm.size.width;
+}
++(CGFloat)returnHeight{
+    CGRect frm=[[UIScreen mainScreen]bounds];
+    return frm.size.height;
 }
 @end

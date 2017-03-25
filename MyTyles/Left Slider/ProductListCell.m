@@ -2,7 +2,7 @@
 //  ProductListCellCollectionViewCell.m
 //  CorpRewardz
 //
-//  Created by Siddhant on 31/01/17.
+//  Created by Martand Joshi on 31/01/17.
 //  Copyright © 2017 Loylty Rewardz. All rights reserved.
 //
 

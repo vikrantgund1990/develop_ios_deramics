@@ -10,6 +10,6 @@
 
 @implementation UIColor (commonColor)
 +(UIColor *) appColor{
-    return [UIColor colorWithRed:243/255.0f green:156/255.0f blue:18/255.0f alpha:1]; // 00923F
+    return [UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1];
 }
 @end
