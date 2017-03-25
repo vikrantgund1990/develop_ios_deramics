@@ -34,10 +34,16 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVm-IB-9vy" customClass="MaxGrayButton">
                                     <rect key="frame" x="15" y="35" width="169" height="40"/>
                                     <state key="normal" title="Floor Tiles"/>
+                                    <connections>
+                                        <action selector="floorTiles:" destination="-1" eventType="touchUpInside" id="UtF-EM-tKa"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4of-uu-uSJ" customClass="MaxGrayButton">
                                     <rect key="frame" x="191" y="35" width="169" height="40"/>
                                     <state key="normal" title="Wall Tiles"/>
+                                    <connections>
+                                        <action selector="wallTiles:" destination="-1" eventType="touchUpInside" id="WDo-YH-ael"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rC-76-a6d" customClass="MaxGrayButton">
                                     <rect key="frame" x="15" y="82" width="169" height="40"/>

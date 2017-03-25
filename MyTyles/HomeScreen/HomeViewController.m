@@ -15,6 +15,8 @@
 #import "MFSideMenu.h"
 #import "UIImageView+AFNetworking.h"
 #import "UserDefults.h"
+#import "WallVC.h"
+#import "FloorVC.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITextFieldDelegate>{
     IBOutlet UITableView *tblView;
@@ -69,6 +71,15 @@
     }
 }
 -(IBAction)okCode:(id)sender{
+    
+}
+-(IBAction)wallTiles:(id)sender{
+  WallVC *wall=  [[WallVC alloc]initWithNibName:@"WallVC" bundle:nil];
+    [self.navigationController pushViewController:wall animated:YES];
+}
+-(IBAction)floorTiles:(id)sender{
+   FloorVC *floor= [[FloorVC alloc]initWithNibName:@"FloorVC" bundle:nil];
+    [self.navigationController pushViewController:floor animated:YES];
     
 }
 -(IBAction)cancelCode:(id)sender{

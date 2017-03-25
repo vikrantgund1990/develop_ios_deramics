@@ -27,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.view setBackgroundColor:[UIColor appColor]];
-    tblArray =[[NSArray alloc]initWithObjects:@"Home",@"Wall",@"Floor",nil];
+    tblArray =[[NSArray alloc]initWithObjects:@"Home",@"Contact Us",@"Rate Us",@"Refferal Code",nil];
     [tblView registerNib:[UINib nibWithNibName:@"LeftSliderCell" bundle:nil] forCellReuseIdentifier:@"LeftSliderCell"];
     [tblView setBackgroundColor:[UIColor appColor]];
     [tblView reloadData];
