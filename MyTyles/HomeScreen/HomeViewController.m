@@ -14,12 +14,13 @@
 #import "Constant.h"
 #import "MFSideMenu.h"
 #import "UIImageView+AFNetworking.h"
+#import "UserDefults.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITextFieldDelegate>{
     IBOutlet UITableView *tblView;
     IBOutlet UITextField *txtRefralCode;
     NSArray *productArray,*ImageArray;
-    IBOutlet UIView *viewButton,*viewRefferalCode;
+    IBOutlet UIView *viewButton,*viewRefferalCode,*tempActionBar;
 }
 
 @end
@@ -33,6 +34,13 @@
     AppDelegate *appDelegate=DELEGATE;
     appDelegate.holderStack=[[NSMutableArray alloc]init];
     [appDelegate.holderStack addObject:self];
+    
+    if(![UserDefults isRefferalCodeshown]) { // Set tap.
+       // [self showHideViews:true];
+        [UserDefults saveRefferalCodeStatus:YES];
+    }else{
+        [self showHideViews:false];
+    }
     
     productArray =[[NSArray alloc]initWithObjects:@"Kitchen",@"Drawing",@"Bathroom",nil];
     ImageArray =[[NSArray alloc]initWithObjects:@"kitchen.jpg",@"Drawing.jpg",@"Bathroom.jpeg",nil];
@@ -64,19 +72,22 @@
     
 }
 -(IBAction)cancelCode:(id)sender{
-    [self showHideViews];
+    [self showHideViews:false];
 }
--(void)showHideViews{
-    [viewButton setHidden:false];
-    [tblView setHidden:false];
-    [viewRefferalCode setHidden:true];
+-(void)showHideViews:(BOOL)showRefferalCode{
+    [viewButton setHidden:showRefferalCode];
+    [tblView setHidden:showRefferalCode];
+    [viewRefferalCode setHidden:!showRefferalCode];
+    [tempActionBar setHidden:true];
+    if(!showRefferalCode){
     ActionBar *actionBar=[[ActionBar alloc]init:@"Ceramics" callingView:self];
     [self.view addSubview:actionBar];
+    }
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch * touch = [touches anyObject];
     if(touch.phase == UITouchPhaseBegan)    {
-        [self showHideViews];
+        [self showHideViews:false];
     }
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

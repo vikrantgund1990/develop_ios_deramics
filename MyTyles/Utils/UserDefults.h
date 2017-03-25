@@ -16,4 +16,6 @@
 +(NSString*)getLongitude;
 +(NSString*)getLocationAddress;
 +(NSString*)getLocationCity;
++(void)saveRefferalCodeStatus:(BOOL)visibilty;
++(BOOL)isRefferalCodeshown;
 @end

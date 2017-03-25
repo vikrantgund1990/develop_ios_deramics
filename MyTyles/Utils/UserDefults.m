@@ -52,7 +52,28 @@
 +(NSString*)getLocationCity{
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSString *city = [userDefaults valueForKey:@"City"];
-    
     return city;
+}
++(BOOL)isRefferalCodeshown{
+    
+    NSUserDefaults *userDefaluts = [NSUserDefaults standardUserDefaults];
+    NSData *data = [userDefaluts objectForKey:@"RefferalCode"];
+    
+    if(!data)
+        return NO;
+    NSDictionary *dict = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    
+    return [[dict objectForKey:@"RefferalCode"]boolValue];
+    
+    return NO;
+}
+
++(void)saveRefferalCodeStatus:(BOOL)visibilty{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    NSDictionary *dict =@{@"RefferalCode":[NSNumber numberWithBool:visibilty]};
+    
+    [userDefaults setObject:[NSKeyedArchiver archivedDataWithRootObject:dict] forKey:@"RefferalCode"];
+    [userDefaults synchronize];
 }
 @end
