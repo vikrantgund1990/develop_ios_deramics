@@ -25,6 +25,8 @@
 		B6063A5E1E8666BE00A05187 /* UserDefults.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A5D1E8666BE00A05187 /* UserDefults.m */; };
 		B6063A621E866EDB00A05187 /* SplashScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A601E866EDB00A05187 /* SplashScreenVC.m */; };
 		B6063A631E866EDB00A05187 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A611E866EDB00A05187 /* SplashScreenVC.xib */; };
+		B6063A661E86E8B800A05187 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A651E86E8B700A05187 /* CustomButton.m */; };
+		B6063A691E86EBCE00A05187 /* CustomTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A681E86EBCE00A05187 /* CustomTextfield.m */; };
 		B655327B1E614DF70002A71D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327A1E614DF70002A71D /* main.m */; };
 		B655327E1E614DF70002A71D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327D1E614DF70002A71D /* AppDelegate.m */; };
 		B65532861E614DF70002A71D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65532851E614DF70002A71D /* Assets.xcassets */; };
@@ -69,6 +71,10 @@
 		B6063A5F1E866EDB00A05187 /* SplashScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashScreenVC.h; sourceTree = "<group>"; };
 		B6063A601E866EDB00A05187 /* SplashScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashScreenVC.m; sourceTree = "<group>"; };
 		B6063A611E866EDB00A05187 /* SplashScreenVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = "<group>"; };
+		B6063A641E86E8B700A05187 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomButton.h; path = Custom/CustomButton.h; sourceTree = "<group>"; };
+		B6063A651E86E8B700A05187 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomButton.m; path = Custom/CustomButton.m; sourceTree = "<group>"; };
+		B6063A671E86EBCE00A05187 /* CustomTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTextfield.h; path = Custom/CustomTextfield.h; sourceTree = "<group>"; };
+		B6063A681E86EBCE00A05187 /* CustomTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTextfield.m; path = Custom/CustomTextfield.m; sourceTree = "<group>"; };
 		B65532761E614DF70002A71D /* MyTyles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTyles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B655327A1E614DF70002A71D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B655327C1E614DF70002A71D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -246,6 +252,10 @@
 				B67962CE1E61DFEF00FCF6EF /* CustomActivityIndicatorView.m */,
 				B67962D01E61E1D500FCF6EF /* UIColor+commonColor.h */,
 				B67962D11E61E1D500FCF6EF /* UIColor+commonColor.m */,
+				B6063A641E86E8B700A05187 /* CustomButton.h */,
+				B6063A651E86E8B700A05187 /* CustomButton.m */,
+				B6063A671E86EBCE00A05187 /* CustomTextfield.h */,
+				B6063A681E86EBCE00A05187 /* CustomTextfield.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -394,6 +404,7 @@
 				B655327B1E614DF70002A71D /* main.m in Sources */,
 				B6063A621E866EDB00A05187 /* SplashScreenVC.m in Sources */,
 				B6063A211E75283800A05187 /* FloorVC.m in Sources */,
+				B6063A691E86EBCE00A05187 /* CustomTextfield.m in Sources */,
 				B6063A171E73F89D00A05187 /* LeftSliderCell.m in Sources */,
 				B655327E1E614DF70002A71D /* AppDelegate.m in Sources */,
 				B6063A2A1E7FBF9800A05187 /* MaxGrayButton.m in Sources */,
@@ -402,6 +413,7 @@
 				B6063A261E77ABB800A05187 /* ProductListCell.m in Sources */,
 				B6063A121E73D19F00A05187 /* Constant.m in Sources */,
 				B67962D21E61E1D500FCF6EF /* UIColor+commonColor.m in Sources */,
+				B6063A661E86E8B800A05187 /* CustomButton.m in Sources */,
 				B67962D81E61E6FB00FCF6EF /* ActionBar.m in Sources */,
 				B67962CB1E61DBF200FCF6EF /* WebServiceController.m in Sources */,
 				B67962CF1E61DFEF00FCF6EF /* CustomActivityIndicatorView.m in Sources */,

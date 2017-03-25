@@ -15,9 +15,11 @@
 #import "MFSideMenu.h"
 #import "UIImageView+AFNetworking.h"
 
-@interface HomeViewController ()<UITableViewDelegate>{
+@interface HomeViewController ()<UITableViewDelegate,UITextFieldDelegate>{
     IBOutlet UITableView *tblView;
+    IBOutlet UITextField *txtRefralCode;
     NSArray *productArray,*ImageArray;
+    IBOutlet UIView *viewButton,*viewRefferalCode;
 }
 
 @end
@@ -27,8 +29,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    ActionBar *actionBar=[[ActionBar alloc]init:@"Ceramics" callingView:self];
-     [self.view addSubview:actionBar];
     
     AppDelegate *appDelegate=DELEGATE;
     appDelegate.holderStack=[[NSMutableArray alloc]init];
@@ -47,22 +47,43 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return productArray.count;
 }
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+-(IBAction)editreferalCode:(id)sender{
+    UITextField *txtfield=(UITextField*)sender;
+    if(txtfield==txtRefralCode){
+        if([txtfield.text length]>=30){
+            NSString *rechargeAmount=[txtfield.text substringToIndex:30];
+            [txtRefralCode setText:rechargeAmount];
+       }
+    }
+}
+-(IBAction)okCode:(id)sender{
+    
+}
+-(IBAction)cancelCode:(id)sender{
+    [self showHideViews];
+}
+-(void)showHideViews{
+    [viewButton setHidden:false];
+    [tblView setHidden:false];
+    [viewRefferalCode setHidden:true];
+    ActionBar *actionBar=[[ActionBar alloc]init:@"Ceramics" callingView:self];
+    [self.view addSubview:actionBar];
+}
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch * touch = [touches anyObject];
+    if(touch.phase == UITouchPhaseBegan)    {
+        [self showHideViews];
+    }
+}
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HomeMenuCell *homeMenuCell=[tableView dequeueReusableCellWithIdentifier:@"HomeMenuCell"];
-//    if(homeMenuCell==nil){
-//        homeMenuCell=[[HomeMenuCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"HomeMenuCell"];
-//    }
+
     homeMenuCell.lblProductName.text=[productArray objectAtIndex:indexPath.row];
-   
-//    [homeMenuCell.imgView  setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://images.ceramicskart.com/img/home/%@",[ImageArray objectAtIndex:indexPath.row]]]] placeholderImage:[UIImage imageNamed:@"stub_merchandise"] success:^(NSURLRequest *request,   NSHTTPURLResponse *response, UIImage *image) {
-//        if (homeMenuCell!=NULL)
-//        {
-//            homeMenuCell.imageView.image = image;
-//            [homeMenuCell setNeedsLayout];
-//        }
-//    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
-//        NSLog(@"Error: %@", error);
-//    }];
+
     [homeMenuCell.imgView setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://images.ceramicskart.com/img/home/%@",[ImageArray objectAtIndex:indexPath.row]]]  placeholderImage:[UIImage imageNamed:@"stub_image"]];
        [homeMenuCell.viewBack setBackgroundColor:[UIColor whiteColor]];
     homeMenuCell.selectionStyle=UITableViewCellSelectionStyleNone;

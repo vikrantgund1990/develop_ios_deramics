@@ -65,6 +65,11 @@
             viewCon=[[FloorVC alloc]initWithNibName:@"FloorVC" bundle:nil];
             break;
         }
+        case 3:{
+            //Refferal code
+            break;
+        }
+            
         default:
             break;
     }

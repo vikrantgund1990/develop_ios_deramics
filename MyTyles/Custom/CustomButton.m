@@ -1,16 +1,22 @@
 //
-//  MaxGrayButton.m
-//  MaxGetMore
+//  CustomButton.m
+//  Ceramics
 //
-//  Created by Tariqs on 10/14/14.
-//  Copyright (c) 2014 Loylty Rewardz. All rights reserved.
+//  Created by Martand Joshi on 25/03/17.
+//  Copyright © 2017 MyTyles. All rights reserved.
 //
 
-#import "MaxGrayButton.h"
+#import "CustomButton.h"
 #import "UIColor+commonColor.h"
+@implementation CustomButton
 
-@implementation MaxGrayButton
-
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -19,7 +25,6 @@
     }
     return self;
 }
-
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
     self = [super initWithCoder:coder];
@@ -28,7 +33,7 @@
 //        frame.size.height = frame.size.height + 5;
 //        self.frame = frame;
         
-        [self setBackgroundColor:[UIColor whiteColor]];
+        [self setBackgroundColor:[UIColor appColor]];
     }
     return self;
 }
@@ -38,8 +43,8 @@
 - (void)drawRect:(CGRect)rect
 {
     self.layer.backgroundColor = [[UIColor whiteColor] CGColor];
-    self.layer.cornerRadius = 5;
-    [self setTitleColor:[UIColor appColor] forState:UIControlStateNormal];
+    self.layer.cornerRadius = 5.0;
+    [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:13.0];
     
     self.layer.borderWidth = 0.5;
