@@ -67,12 +67,12 @@ CLLocationManager *locationManager;
     return YES;
 }
 -(void)startMainScreen{
-    if(isAlertClicked||!isLocationServiceOff){
+    //if(isAlertClicked||!isLocationServiceOff){
     [UIView transitionWithView:self.window duration:0.5 options:UIViewAnimationOptionCurveEaseIn animations:^{
         self.window.rootViewController = self.slider;
         
     } completion:nil];
-    }
+   // }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -128,9 +128,9 @@ CLLocationManager *locationManager;
             break;
         case kCLErrorDenied:{
             isLocationServiceOff=YES;
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Services Disabled" message:@"You can enable Location for Ceramics from Settings > Privacy > Location Services" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            [alert show];
-            
+            //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Services Disabled" message:@"You can enable Location for Ceramics from Settings > Privacy > Location Services" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+           // [alert show];
+           
         }
             break;
         default:

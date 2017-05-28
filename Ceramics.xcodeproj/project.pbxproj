@@ -27,6 +27,8 @@
 		B6063A631E866EDB00A05187 /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A611E866EDB00A05187 /* SplashScreenVC.xib */; };
 		B6063A661E86E8B800A05187 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A651E86E8B700A05187 /* CustomButton.m */; };
 		B6063A691E86EBCE00A05187 /* CustomTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A681E86EBCE00A05187 /* CustomTextfield.m */; };
+		B6063A6F1E8BC03B00A05187 /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6063A6D1E8BC03B00A05187 /* CityCell.m */; };
+		B6063A701E8BC03B00A05187 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6063A6E1E8BC03B00A05187 /* CityCell.xib */; };
 		B655327B1E614DF70002A71D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327A1E614DF70002A71D /* main.m */; };
 		B655327E1E614DF70002A71D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327D1E614DF70002A71D /* AppDelegate.m */; };
 		B65532861E614DF70002A71D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65532851E614DF70002A71D /* Assets.xcassets */; };
@@ -40,6 +42,9 @@
 		B67962DA1E61E72B00FCF6EF /* ActionBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = B67962D91E61E72B00FCF6EF /* ActionBar.xib */; };
 		B67962DE1E61ECB400FCF6EF /* HomeMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962DC1E61ECB400FCF6EF /* HomeMenuCell.m */; };
 		B67962DF1E61ECB400FCF6EF /* HomeMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B67962DD1E61ECB400FCF6EF /* HomeMenuCell.xib */; };
+		B67DB1841EADD6930011CF38 /* HorizontalCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = B67DB1821EADD6930011CF38 /* HorizontalCollection.m */; };
+		B67DB1851EADD6930011CF38 /* HorizontalCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = B67DB1831EADD6930011CF38 /* HorizontalCollection.xib */; };
+		B6E8051C1EB86E4700BD2879 /* KIImagePager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E8051B1EB86E4700BD2879 /* KIImagePager.m */; };
 		D1A788BD2A452C4576E5BDCC /* libPods-MyTyles.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FC36915ED0934C04F93B33 /* libPods-MyTyles.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +80,9 @@
 		B6063A651E86E8B700A05187 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomButton.m; path = Custom/CustomButton.m; sourceTree = "<group>"; };
 		B6063A671E86EBCE00A05187 /* CustomTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTextfield.h; path = Custom/CustomTextfield.h; sourceTree = "<group>"; };
 		B6063A681E86EBCE00A05187 /* CustomTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTextfield.m; path = Custom/CustomTextfield.m; sourceTree = "<group>"; };
+		B6063A6C1E8BC03B00A05187 /* CityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityCell.h; path = HomeScreen/CityCell.h; sourceTree = "<group>"; };
+		B6063A6D1E8BC03B00A05187 /* CityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityCell.m; path = HomeScreen/CityCell.m; sourceTree = "<group>"; };
+		B6063A6E1E8BC03B00A05187 /* CityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CityCell.xib; path = HomeScreen/CityCell.xib; sourceTree = "<group>"; };
 		B65532761E614DF70002A71D /* MyTyles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTyles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B655327A1E614DF70002A71D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B655327C1E614DF70002A71D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +107,11 @@
 		B67962DB1E61ECB400FCF6EF /* HomeMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeMenuCell.h; path = HomeScreen/HomeMenuCell.h; sourceTree = "<group>"; };
 		B67962DC1E61ECB400FCF6EF /* HomeMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeMenuCell.m; path = HomeScreen/HomeMenuCell.m; sourceTree = "<group>"; };
 		B67962DD1E61ECB400FCF6EF /* HomeMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeMenuCell.xib; path = HomeScreen/HomeMenuCell.xib; sourceTree = "<group>"; };
+		B67DB1811EADD6930011CF38 /* HorizontalCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HorizontalCollection.h; path = HomeScreen/HorizontalCollection.h; sourceTree = "<group>"; };
+		B67DB1821EADD6930011CF38 /* HorizontalCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HorizontalCollection.m; path = HomeScreen/HorizontalCollection.m; sourceTree = "<group>"; };
+		B67DB1831EADD6930011CF38 /* HorizontalCollection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HorizontalCollection.xib; path = HomeScreen/HorizontalCollection.xib; sourceTree = "<group>"; };
+		B6E8051A1EB86E4700BD2879 /* KIImagePager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KIImagePager.h; path = HomeScreen/KIImagePager.h; sourceTree = "<group>"; };
+		B6E8051B1EB86E4700BD2879 /* KIImagePager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KIImagePager.m; path = HomeScreen/KIImagePager.m; sourceTree = "<group>"; };
 		C1D5AF0AC1AEEB4EAE8C1A29 /* Pods-MyTyles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTyles.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTyles/Pods-MyTyles.release.xcconfig"; sourceTree = "<group>"; };
 		D2FC36915ED0934C04F93B33 /* libPods-MyTyles.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyTyles.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -203,12 +216,20 @@
 		B67962C01E615B4E00FCF6EF /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				B6E8051A1EB86E4700BD2879 /* KIImagePager.h */,
+				B6E8051B1EB86E4700BD2879 /* KIImagePager.m */,
 				B67962C11E615B8400FCF6EF /* HomeViewController.h */,
 				B67962C21E615B8400FCF6EF /* HomeViewController.m */,
 				B67962C31E615B8400FCF6EF /* HomeViewController.xib */,
 				B67962DB1E61ECB400FCF6EF /* HomeMenuCell.h */,
 				B67962DC1E61ECB400FCF6EF /* HomeMenuCell.m */,
 				B67962DD1E61ECB400FCF6EF /* HomeMenuCell.xib */,
+				B6063A6C1E8BC03B00A05187 /* CityCell.h */,
+				B6063A6D1E8BC03B00A05187 /* CityCell.m */,
+				B6063A6E1E8BC03B00A05187 /* CityCell.xib */,
+				B67DB1811EADD6930011CF38 /* HorizontalCollection.h */,
+				B67DB1821EADD6930011CF38 /* HorizontalCollection.m */,
+				B67DB1831EADD6930011CF38 /* HorizontalCollection.xib */,
 			);
 			name = HomeScreen;
 			sourceTree = "<group>";
@@ -331,12 +352,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B67DB1851EADD6930011CF38 /* HorizontalCollection.xib in Resources */,
 				B6063A221E75283800A05187 /* FloorVC.xib in Resources */,
 				B6063A271E77ABB800A05187 /* ProductListCell.xib in Resources */,
 				B67962DF1E61ECB400FCF6EF /* HomeMenuCell.xib in Resources */,
 				B65532891E614DF70002A71D /* LaunchScreen.storyboard in Resources */,
 				B67962DA1E61E72B00FCF6EF /* ActionBar.xib in Resources */,
 				B6063A631E866EDB00A05187 /* SplashScreenVC.xib in Resources */,
+				B6063A701E8BC03B00A05187 /* CityCell.xib in Resources */,
 				B6063A181E73F89D00A05187 /* LeftSliderCell.xib in Resources */,
 				B6063A1D1E75280A00A05187 /* WallVC.xib in Resources */,
 				B65532861E614DF70002A71D /* Assets.xcassets in Resources */,
@@ -406,10 +429,13 @@
 				B6063A211E75283800A05187 /* FloorVC.m in Sources */,
 				B6063A691E86EBCE00A05187 /* CustomTextfield.m in Sources */,
 				B6063A171E73F89D00A05187 /* LeftSliderCell.m in Sources */,
+				B6063A6F1E8BC03B00A05187 /* CityCell.m in Sources */,
 				B655327E1E614DF70002A71D /* AppDelegate.m in Sources */,
 				B6063A2A1E7FBF9800A05187 /* MaxGrayButton.m in Sources */,
+				B6E8051C1EB86E4700BD2879 /* KIImagePager.m in Sources */,
 				B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */,
 				B6063A0A1E73C57B00A05187 /* LeftSlider.m in Sources */,
+				B67DB1841EADD6930011CF38 /* HorizontalCollection.m in Sources */,
 				B6063A261E77ABB800A05187 /* ProductListCell.m in Sources */,
 				B6063A121E73D19F00A05187 /* Constant.m in Sources */,
 				B67962D21E61E1D500FCF6EF /* UIColor+commonColor.m in Sources */,

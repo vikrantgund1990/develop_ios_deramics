@@ -39,11 +39,11 @@
 {
     self.layer.backgroundColor = [[UIColor whiteColor] CGColor];
     self.layer.cornerRadius = 5;
-    [self setTitleColor:[UIColor appColor] forState:UIControlStateNormal];
+    [self setTitleColor:[UIColor text_color] forState:UIControlStateNormal];
     self.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:13.0];
     
     self.layer.borderWidth = 0.5;
-    self.layer.borderColor = [[UIColor appColor] CGColor];
+    self.layer.borderColor = [[UIColor custom_gray] CGColor];
 }
 
 @end

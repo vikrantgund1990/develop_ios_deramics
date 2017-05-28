@@ -27,9 +27,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.view setBackgroundColor:[UIColor appColor]];
-    tblArray =[[NSArray alloc]initWithObjects:@"Home",@"Contact Us",@"Rate Us",@"Refferal Code",nil];
+    tblArray =[[NSArray alloc]initWithObjects:@"Home",@"Contact Us",@"Rate Us",@"Promotion Code",nil];
     [tblView registerNib:[UINib nibWithNibName:@"LeftSliderCell" bundle:nil] forCellReuseIdentifier:@"LeftSliderCell"];
-    [tblView setBackgroundColor:[UIColor appColor]];
+    [tblView setBackgroundColor:[UIColor whiteColor]];
     [tblView reloadData];
 }
 
@@ -40,6 +40,7 @@
     LeftSliderCell *leftSliderCell=[tableView dequeueReusableCellWithIdentifier:@"LeftSliderCell"];
     leftSliderCell.lblTitle.text=[tblArray objectAtIndex:indexPath.row];
     leftSliderCell.selectionStyle=UITableViewCellSelectionStyleNone;
+    [leftSliderCell.lblTitle setTextColor:[UIColor text_color]];
     return leftSliderCell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

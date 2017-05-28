@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B65532751E614DF70002A71D"
-               BuildableName = ".app"
+               BuildableName = "MyTyles.app"
                BlueprintName = "Ceramics"
                ReferencedContainer = "container:Ceramics.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B65532751E614DF70002A71D"
-            BuildableName = ".app"
+            BuildableName = "MyTyles.app"
             BlueprintName = "Ceramics"
             ReferencedContainer = "container:Ceramics.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B65532751E614DF70002A71D"
-            BuildableName = ".app"
+            BuildableName = "MyTyles.app"
             BlueprintName = "Ceramics"
             ReferencedContainer = "container:Ceramics.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B65532751E614DF70002A71D"
-            BuildableName = ".app"
+            BuildableName = "MyTyles.app"
             BlueprintName = "Ceramics"
             ReferencedContainer = "container:Ceramics.xcodeproj">
          </BuildableReference>

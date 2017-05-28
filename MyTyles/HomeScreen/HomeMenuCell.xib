@@ -22,7 +22,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLC-p6-idz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hgh-pr-Vbx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stub_image" translatesAutoresizingMaskIntoConstraints="NO" id="hgh-pr-Vbx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcj-bR-Rzb">
@@ -70,4 +70,7 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="stub_image" width="60" height="60"/>
+    </resources>
 </document>

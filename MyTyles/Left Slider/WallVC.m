@@ -11,7 +11,8 @@
 #import "WebServiceController.h"
 #import"ProductListCell.h"
 #import "UIColor+commonColor.h"
-
+#import "UIImageView+AFNetworking.h"
+#import "UserDefults.h"
 @interface WallVC (){
     NSArray *data;
     
@@ -39,26 +40,17 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellIdentifier=@"ProductListCell";
     __weak ProductListCell *productListCell=(ProductListCell *)[_cvWallList dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-    
-//    ProductListModel *productListModel=[MTLJSONAdapter modelOfClass:ProductListModel.class fromJSONDictionary:[_productListArray objectAtIndex:indexPath.row] error:nil];
+ 
   
     NSDictionary *dictObj=[data objectAtIndex:indexPath.row];
     
     productListCell.lblProductName.text=[[dictObj objectForKey:@"productId"]stringValue];
-     [productListCell.lblProductName setTextColor:[UIColor appColor]];
+     [productListCell.lblProductName setTextColor:[UIColor text_color]];
     [productListCell setBackgroundColor:[UIColor whiteColor]];
-    
-   
-//    [productListCell.ivProduct setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:]] placeholderImage:[UIImage imageNamed:@"stub_merchandise"] success:^(NSURLRequest *request,   NSHTTPURLResponse *response, UIImage *image) {
-//        if (productListCell!=NULL)
-//        {
-//            productListCell.ivProduct.image = image;
-//            [productListCell setNeedsLayout];
-//        }
-//    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
-//        NSLog(@"Error: %@", error);
-//    }];
-    
+    [productListCell.viewInternal setBackgroundColor:[UIColor appColor]];
+//    http://images.ceramicskart.com/img/
+      [productListCell.ivProduct setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://images.ceramicskart.com/img/%@.png",[[dictObj objectForKey:@"productId"]stringValue]]]  placeholderImage:[UIImage imageNamed:@"stub_image"]];
+
     return productListCell;
 }
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -70,7 +62,9 @@
   
 }
 -(void)getWallData{
-    [[WebServiceController sharedInstance]GetMethod:self url:@"Product/Type/Floor" isSync:true parameters:
+    //http://qa.ceramicskart.com/api/Product/Type/floor/Mumbai
+    NSString *strURL=[NSString stringWithFormat:@"Product/Type/Wall/%@",[UserDefults getLocationCity]];
+    [[WebServiceController sharedInstance]GetMethod:self url:strURL isSync:true parameters:
      nil response:^(id dictObj) {
          if([[dictObj objectForKey:@"status"]boolValue]){
              data=[dictObj objectForKey:@"data"];
@@ -82,13 +76,7 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
 
     CGSize mElementSize = CGSizeMake(([Constant returnWidth]-20)/2, 150);
-  //  (view.bounds.size.width - 16) / 2
-//     ProductListCell *productListCell =(ProductListCell *) [_cvWallList cellForItemAtIndexPath:indexPath];
-//     CGRect frame= productListCell.viewInternal.frame;
-//    frame.size.width=([Constant returnWidth]-60)/2;
-//    productListCell.viewInternal.frame=frame;
-//    [productListCell.viewInternal setHidden:false];
-//    [_cvWallList reloadData];
+ 
     return mElementSize;
 }
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {

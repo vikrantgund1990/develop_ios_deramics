@@ -34,7 +34,7 @@ AppDelegate *appDelegateSharedObj;
     view.backgroundColor = [UIColor appColor];
      internalView.backgroundColor=[UIColor appColor];
      view.lblTitle.text=title;
-     [view.lblTitle setTextColor:[UIColor whiteColor]];
+     [view.lblTitle setTextColor:[UIColor text_color]];
 //     CGRect frm=view.frame;
 //     frm=frame;
      view.frame=frame;

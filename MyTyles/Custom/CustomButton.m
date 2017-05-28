@@ -22,6 +22,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+       
     }
     return self;
 }
@@ -33,7 +34,8 @@
 //        frame.size.height = frame.size.height + 5;
 //        self.frame = frame;
         
-        [self setBackgroundColor:[UIColor appColor]];
+        // [self setBackgroundColor:[UIColor custom_orange]];
+       // self.scoreLabel.layer.backgroundColor = [[UIColor DISRed] CGColor];
     }
     return self;
 }
@@ -42,13 +44,21 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-    self.layer.backgroundColor = [[UIColor whiteColor] CGColor];
     self.layer.cornerRadius = 5.0;
+    self.layer.backgroundColor = [[UIColor custom_orange] CGColor];
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:13.0];
     
-    self.layer.borderWidth = 0.5;
-    self.layer.borderColor = [[UIColor appColor] CGColor];
+//    self.layer.borderWidth = 0.5;
+//    self.layer.borderColor = [[UIColor whiteColor] CGColor];
+    
+//    self.layer.backgroundColor = [[UIColor whiteColor] CGColor];
+//    self.layer.cornerRadius = 5;
+//    [self setTitleColor:[UIColor text_color] forState:UIControlStateNormal];
+//    self.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:13.0];
+//    
+//    self.layer.borderWidth = 0.5;
+//    self.layer.borderColor = [[UIColor custom_gray] CGColor];
 }
 
 @end

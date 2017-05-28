@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,26 +28,35 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gch-s3-7xb" userLabel="btnHomeMenu">
-                            <rect key="frame" x="8" y="5" width="48" height="35.5"/>
+                            <rect key="frame" x="8" y="0.0" width="48" height="35.5"/>
                             <state key="normal" image="hamburger"/>
                             <connections>
                                 <action selector="leftMenu:" destination="goS-sJ-VWl" eventType="touchDown" id="zYu-WQ-Au8"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ceramics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0O-mH-Cml">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CeramicsKart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0O-mH-Cml">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
-                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFC-ed-lRC">
+                            <rect key="frame" x="0.0" y="43" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="6ew-6Z-gwf"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="gch-s3-7xb" firstAttribute="top" secondItem="UGO-Gt-flx" secondAttribute="top" constant="5" id="61a-gy-97E"/>
+                        <constraint firstAttribute="bottom" secondItem="aFC-ed-lRC" secondAttribute="bottom" constant="1.5" id="3cO-z7-HOY"/>
+                        <constraint firstItem="gch-s3-7xb" firstAttribute="top" secondItem="UGO-Gt-flx" secondAttribute="top" id="61a-gy-97E"/>
                         <constraint firstItem="xBJ-b5-etv" firstAttribute="width" secondItem="UGO-Gt-flx" secondAttribute="width" multiplier="0.159" id="75n-wg-blp"/>
                         <constraint firstItem="xBJ-b5-etv" firstAttribute="leading" secondItem="UGO-Gt-flx" secondAttribute="leading" constant="8" id="8WQ-sd-RUN"/>
                         <constraint firstAttribute="height" constant="45" id="CeH-ww-Ljz"/>
                         <constraint firstItem="gch-s3-7xb" firstAttribute="height" secondItem="UGO-Gt-flx" secondAttribute="height" multiplier="0.78" id="Go3-9R-BUQ"/>
+                        <constraint firstAttribute="trailing" secondItem="aFC-ed-lRC" secondAttribute="trailing" id="JJz-nV-9hj"/>
                         <constraint firstItem="gch-s3-7xb" firstAttribute="width" secondItem="UGO-Gt-flx" secondAttribute="width" multiplier="0.128" id="QKh-dv-AJz"/>
                         <constraint firstItem="E0O-mH-Cml" firstAttribute="centerX" secondItem="UGO-Gt-flx" secondAttribute="centerX" id="VYh-4X-laS"/>
                         <constraint firstItem="xBJ-b5-etv" firstAttribute="height" secondItem="UGO-Gt-flx" secondAttribute="height" multiplier="0.79" id="YNa-WA-sUP"/>
@@ -55,6 +64,7 @@
                         <constraint firstItem="gch-s3-7xb" firstAttribute="leading" secondItem="UGO-Gt-flx" secondAttribute="leading" constant="8" id="g5h-jW-Qw9"/>
                         <constraint firstItem="E0O-mH-Cml" firstAttribute="height" secondItem="UGO-Gt-flx" secondAttribute="height" id="l1J-y6-Vfx"/>
                         <constraint firstItem="E0O-mH-Cml" firstAttribute="centerY" secondItem="UGO-Gt-flx" secondAttribute="centerY" id="liR-6z-dxa"/>
+                        <constraint firstItem="aFC-ed-lRC" firstAttribute="leading" secondItem="UGO-Gt-flx" secondAttribute="leading" id="t1K-N2-N3w"/>
                         <constraint firstItem="xBJ-b5-etv" firstAttribute="top" secondItem="UGO-Gt-flx" secondAttribute="top" constant="5" id="xxC-9W-Ska"/>
                     </constraints>
                 </view>

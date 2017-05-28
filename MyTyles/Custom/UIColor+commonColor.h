@@ -11,4 +11,7 @@
 @interface  UIColor (commonColor)
 
 +(UIColor *) appColor;
++(UIColor*)text_color;
++(UIColor*)custom_gray;
++(UIColor*)custom_orange;
 @end
