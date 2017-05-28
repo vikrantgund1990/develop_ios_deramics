@@ -13,6 +13,7 @@
 #import "FloorVC.h"
 #import "Constant.h"
 #import "ActionBar.h"
+#import "WebViewController.h"
 
 @interface LeftSlider (){
     IBOutlet UITableView *tblView;
@@ -27,7 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.view setBackgroundColor:[UIColor appColor]];
-    tblArray =[[NSArray alloc]initWithObjects:@"Home",@"Contact Us",@"Rate Us",@"Promotion Code",nil];
+    tblArray =[[NSArray alloc]initWithObjects:@"Home",@"Products",@"3D Tile Visualizer",@"Other Products",@"List your Products",@"Contact Us",@"About Us",@"Promotion Code",nil];
     [tblView registerNib:[UINib nibWithNibName:@"LeftSliderCell" bundle:nil] forCellReuseIdentifier:@"LeftSliderCell"];
     [tblView setBackgroundColor:[UIColor whiteColor]];
     [tblView reloadData];
@@ -61,18 +62,19 @@
             viewCon=[[WallVC alloc]initWithNibName:@"WallVC" bundle:nil];
             break;
         }
-        case 2:{
-            // floor
-            viewCon=[[FloorVC alloc]initWithNibName:@"FloorVC" bundle:nil];
-            break;
-        }
-        case 3:{
+        case 7:{
             //Refferal code
+            if( [con respondsToSelector:@selector(showRefCode)]){
+                
+                [con performSelector:@selector(showRefCode)];
+            }
             break;
         }
             
-        default:
+        default:{
+            viewCon=[[WebViewController alloc]initWithNibName:@"WebViewController" bundle:nil];
             break;
+        }
     }
    [[con navigationController]pushViewController:viewCon animated:YES];
 }

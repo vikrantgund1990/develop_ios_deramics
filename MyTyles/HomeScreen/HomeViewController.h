@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
-
+@interface HomeViewController : UIViewController{
+    
+}
+-(void)showRefCode;
 @end

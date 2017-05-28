@@ -33,6 +33,8 @@
 		B655327E1E614DF70002A71D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B655327D1E614DF70002A71D /* AppDelegate.m */; };
 		B65532861E614DF70002A71D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65532851E614DF70002A71D /* Assets.xcassets */; };
 		B65532891E614DF70002A71D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65532871E614DF70002A71D /* LaunchScreen.storyboard */; };
+		B6621EF71EDAFEBF006CB5FF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6621EF51EDAFEBF006CB5FF /* WebViewController.m */; };
+		B6621EF81EDAFEBF006CB5FF /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6621EF61EDAFEBF006CB5FF /* WebViewController.xib */; };
 		B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962C21E615B8400FCF6EF /* HomeViewController.m */; };
 		B67962C51E615B8400FCF6EF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B67962C31E615B8400FCF6EF /* HomeViewController.xib */; };
 		B67962CB1E61DBF200FCF6EF /* WebServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962CA1E61DBF200FCF6EF /* WebServiceController.m */; };
@@ -90,6 +92,9 @@
 		B65532851E614DF70002A71D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B65532881E614DF70002A71D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B655328A1E614DF70002A71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6621EF41EDAFEBF006CB5FF /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = "Left Slider/WebViewController.h"; sourceTree = "<group>"; };
+		B6621EF51EDAFEBF006CB5FF /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = "Left Slider/WebViewController.m"; sourceTree = "<group>"; };
+		B6621EF61EDAFEBF006CB5FF /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebViewController.xib; path = "Left Slider/WebViewController.xib"; sourceTree = "<group>"; };
 		B67962C11E615B8400FCF6EF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = HomeScreen/HomeViewController.h; sourceTree = "<group>"; };
 		B67962C21E615B8400FCF6EF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = HomeScreen/HomeViewController.m; sourceTree = "<group>"; };
 		B67962C31E615B8400FCF6EF /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = HomeScreen/HomeViewController.xib; sourceTree = "<group>"; };
@@ -160,6 +165,9 @@
 				B6063A231E77ABB800A05187 /* ProductListCell.h */,
 				B6063A241E77ABB800A05187 /* ProductListCell.m */,
 				B6063A251E77ABB800A05187 /* ProductListCell.xib */,
+				B6621EF41EDAFEBF006CB5FF /* WebViewController.h */,
+				B6621EF51EDAFEBF006CB5FF /* WebViewController.m */,
+				B6621EF61EDAFEBF006CB5FF /* WebViewController.xib */,
 			);
 			name = "Left Slider";
 			sourceTree = "<group>";
@@ -355,6 +363,7 @@
 				B67DB1851EADD6930011CF38 /* HorizontalCollection.xib in Resources */,
 				B6063A221E75283800A05187 /* FloorVC.xib in Resources */,
 				B6063A271E77ABB800A05187 /* ProductListCell.xib in Resources */,
+				B6621EF81EDAFEBF006CB5FF /* WebViewController.xib in Resources */,
 				B67962DF1E61ECB400FCF6EF /* HomeMenuCell.xib in Resources */,
 				B65532891E614DF70002A71D /* LaunchScreen.storyboard in Resources */,
 				B67962DA1E61E72B00FCF6EF /* ActionBar.xib in Resources */,
@@ -442,6 +451,7 @@
 				B6063A661E86E8B800A05187 /* CustomButton.m in Sources */,
 				B67962D81E61E6FB00FCF6EF /* ActionBar.m in Sources */,
 				B67962CB1E61DBF200FCF6EF /* WebServiceController.m in Sources */,
+				B6621EF71EDAFEBF006CB5FF /* WebViewController.m in Sources */,
 				B67962CF1E61DFEF00FCF6EF /* CustomActivityIndicatorView.m in Sources */,
 				B6063A5E1E8666BE00A05187 /* UserDefults.m in Sources */,
 				B67962DE1E61ECB400FCF6EF /* HomeMenuCell.m in Sources */,

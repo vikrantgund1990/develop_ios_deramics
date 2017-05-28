@@ -32,6 +32,7 @@
     UIPageControl *pageControl;
     int indexOffset;
     IBOutlet KIImagePager *_imagePager;
+    ActionBar *actionBar;
 }
 
 
@@ -98,7 +99,7 @@
 -(void)viewDidAppear:(BOOL)animated{
     _imagePager.pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
     _imagePager.pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
-    _imagePager.slideshowTimeInterval = 5.5f;
+    _imagePager.slideshowTimeInterval = 3.0f;
     _imagePager.slideshowShouldCallScrollToDelegate = YES;
 }
 #pragma mark - KIImagePager DataSource
@@ -135,12 +136,12 @@
 #pragma mark - KIImagePager Delegate
 - (void) imagePager:(KIImagePager *)imagePager didScrollToIndex:(NSUInteger)index
 {
-    NSLog(@"%s %lu", __PRETTY_FUNCTION__, (unsigned long)index);
+   // NSLog(@"%s %lu", __PRETTY_FUNCTION__, (unsigned long)index);
 }
 
 - (void) imagePager:(KIImagePager *)imagePager didSelectImageAtIndex:(NSUInteger)index
 {
-    NSLog(@"%s %lu", __PRETTY_FUNCTION__, (unsigned long)index);
+    //NSLog(@"%s %lu", __PRETTY_FUNCTION__, (unsigned long)index);
 }
 //-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 //    static NSString *cellIdentifier=@"HorizontalCollection";
@@ -271,16 +272,20 @@
 //- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
 //    return 0;
 //}
-
+-(void)showRefCode{
+    [actionBar removeFromSuperview];
+    [viewButton setHidden:true];
+    [tblView setHidden:false];
+    [viewRefferalCode setHidden:false];
+    [tempActionBar setHidden:false];
+    [tblcity setHidden:TRUE];
+    [viewRefCode setHidden:false];
+    
+}
 -(void)showHomeScreen{
     if(![UserDefults isRefferalCodeshown]) { // Set tap.
         [UserDefults saveRefferalCodeStatus:YES];
-        [viewButton setHidden:true];
-        [tblView setHidden:false];
-        [viewRefferalCode setHidden:false];
-        [tempActionBar setHidden:false];
-        [tblcity setHidden:TRUE];
-        [viewRefCode setHidden:false];
+        [self showRefCode];
     }else{
         [self showHideViews:false];
     }
@@ -340,7 +345,7 @@
     [tblcity setHidden:TRUE];
     [viewRefCode setHidden:true];
     if(!showRefferalCode){
-    ActionBar *actionBar=[[ActionBar alloc]init:@"CeramicsKart" callingView:self];
+    actionBar=[[ActionBar alloc]init:@"CeramicsKart" callingView:self];
     [self.view addSubview:actionBar];
     }
 }
@@ -358,6 +363,7 @@
     homeMenuCell.lblProductName.text=[productArray objectAtIndex:indexPath.row];
     [homeMenuCell.imgView setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://images.ceramicskart.com/img/home/%@",[ImageArray objectAtIndex:indexPath.row]]]  placeholderImage:[UIImage imageNamed:@"stub_image"]];
        [homeMenuCell.viewBack setBackgroundColor:[UIColor whiteColor]];
+     
     homeMenuCell.selectionStyle=UITableViewCellSelectionStyleNone;
     return homeMenuCell;
     }

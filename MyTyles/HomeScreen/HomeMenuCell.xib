@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLC-p6-idz">
@@ -25,30 +25,42 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stub_image" translatesAutoresizingMaskIntoConstraints="NO" id="hgh-pr-Vbx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBL-qz-3J7">
+                                <rect key="frame" x="0.0" y="117" width="375" height="33"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kitchen Tiles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="7St-Fh-Xxv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.65098039215686276" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7St-Fh-Xxv" secondAttribute="trailing" id="Aie-By-u1c"/>
+                                    <constraint firstAttribute="bottom" secondItem="7St-Fh-Xxv" secondAttribute="bottom" id="Rti-Di-jvS"/>
+                                    <constraint firstItem="7St-Fh-Xxv" firstAttribute="top" secondItem="EBL-qz-3J7" secondAttribute="top" id="X4P-yU-Mbs"/>
+                                    <constraint firstItem="7St-Fh-Xxv" firstAttribute="leading" secondItem="EBL-qz-3J7" secondAttribute="leading" id="wxI-NB-G8v"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcj-bR-Rzb">
                                 <rect key="frame" x="0.0" y="148" width="375" height="1.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kitchen Tiles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="7St-Fh-Xxv">
-                                <rect key="frame" x="15" y="148" width="345" height="1.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="7St-Fh-Xxv" secondAttribute="bottom" id="50Y-TD-MgK"/>
                             <constraint firstItem="vcj-bR-Rzb" firstAttribute="leading" secondItem="dLC-p6-idz" secondAttribute="leading" id="75O-Ii-8ou"/>
-                            <constraint firstAttribute="trailing" secondItem="7St-Fh-Xxv" secondAttribute="trailing" constant="15" id="EPJ-AZ-m5L"/>
+                            <constraint firstAttribute="bottom" secondItem="EBL-qz-3J7" secondAttribute="bottom" constant="-0.5" id="DBG-w6-ihX"/>
+                            <constraint firstItem="EBL-qz-3J7" firstAttribute="height" secondItem="dLC-p6-idz" secondAttribute="height" multiplier="0.22" id="H8c-mC-CCR"/>
                             <constraint firstItem="vcj-bR-Rzb" firstAttribute="height" secondItem="dLC-p6-idz" secondAttribute="height" multiplier="0.015" id="HeI-Pd-6SZ"/>
-                            <constraint firstItem="7St-Fh-Xxv" firstAttribute="leading" secondItem="dLC-p6-idz" secondAttribute="leading" constant="15" id="OKX-rn-2cu"/>
                             <constraint firstItem="hgh-pr-Vbx" firstAttribute="leading" secondItem="dLC-p6-idz" secondAttribute="leading" id="TyP-Lc-6WH"/>
                             <constraint firstAttribute="bottom" secondItem="vcj-bR-Rzb" secondAttribute="bottom" id="Xum-SV-qeG"/>
                             <constraint firstAttribute="trailing" secondItem="vcj-bR-Rzb" secondAttribute="trailing" id="c6V-ng-2zw"/>
                             <constraint firstAttribute="bottom" secondItem="hgh-pr-Vbx" secondAttribute="bottom" id="etg-a5-qST"/>
-                            <constraint firstItem="7St-Fh-Xxv" firstAttribute="height" secondItem="vcj-bR-Rzb" secondAttribute="height" id="ibZ-JG-qPr"/>
+                            <constraint firstAttribute="trailing" secondItem="EBL-qz-3J7" secondAttribute="trailing" id="khT-Jj-Ihn"/>
                             <constraint firstItem="vcj-bR-Rzb" firstAttribute="width" secondItem="dLC-p6-idz" secondAttribute="width" id="mPC-DH-duF"/>
+                            <constraint firstItem="EBL-qz-3J7" firstAttribute="leading" secondItem="dLC-p6-idz" secondAttribute="leading" id="pbP-CR-jmv"/>
                             <constraint firstAttribute="trailing" secondItem="hgh-pr-Vbx" secondAttribute="trailing" id="rLn-N0-6rd"/>
                             <constraint firstItem="hgh-pr-Vbx" firstAttribute="top" secondItem="dLC-p6-idz" secondAttribute="top" id="vTC-bv-T1c"/>
                         </constraints>
