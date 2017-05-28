@@ -33,7 +33,7 @@ CustomActivityIndicatorView *customIndicator;
     _webView.delegate = self;
     
     //if(urlToLoad == (id)[NSNull null])
-        urlToLoad = @"www.google.co.in";
+        urlToLoad = @"https://www.google.co.in";
     urlToLoad = [urlToLoad stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
     NSURL *url = [NSURL URLWithString:[urlToLoad stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];

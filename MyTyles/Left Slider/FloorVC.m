@@ -25,7 +25,7 @@ NSArray *data;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    ActionBar *actionBar=[[ActionBar alloc]init:@"Floor" callingView:self];
+    ActionBar *actionBar=[[ActionBar alloc]init:@"Floor Tiles" callingView:self];
     [self.view addSubview:actionBar];
     
     [self getWallData];

@@ -24,7 +24,7 @@ AppDelegate *appDelegateSharedObj;
     appDelegateSharedObj=DELEGATE;
     CGRect frm=[[UIScreen mainScreen]bounds];
     CGFloat width= frm.size.width;
-    CGFloat height=frm.size.height;
+  //  CGFloat height=frm.size.height;
          return [self initWithFrame:CGRectMake(0, 0, width,60) title:title callingView:callingView];
 }
  - (id)initWithFrame:(CGRect)frame title:(NSString *)title callingView:(UIViewController*)callingView{

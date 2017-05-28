@@ -35,6 +35,8 @@
 		B65532891E614DF70002A71D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B65532871E614DF70002A71D /* LaunchScreen.storyboard */; };
 		B6621EF71EDAFEBF006CB5FF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6621EF51EDAFEBF006CB5FF /* WebViewController.m */; };
 		B6621EF81EDAFEBF006CB5FF /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6621EF61EDAFEBF006CB5FF /* WebViewController.xib */; };
+		B6621EFC1EDB1331006CB5FF /* Products.m in Sources */ = {isa = PBXBuildFile; fileRef = B6621EFA1EDB1331006CB5FF /* Products.m */; };
+		B6621EFD1EDB1331006CB5FF /* Products.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6621EFB1EDB1331006CB5FF /* Products.xib */; };
 		B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962C21E615B8400FCF6EF /* HomeViewController.m */; };
 		B67962C51E615B8400FCF6EF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B67962C31E615B8400FCF6EF /* HomeViewController.xib */; };
 		B67962CB1E61DBF200FCF6EF /* WebServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962CA1E61DBF200FCF6EF /* WebServiceController.m */; };
@@ -95,6 +97,9 @@
 		B6621EF41EDAFEBF006CB5FF /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = "Left Slider/WebViewController.h"; sourceTree = "<group>"; };
 		B6621EF51EDAFEBF006CB5FF /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = "Left Slider/WebViewController.m"; sourceTree = "<group>"; };
 		B6621EF61EDAFEBF006CB5FF /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebViewController.xib; path = "Left Slider/WebViewController.xib"; sourceTree = "<group>"; };
+		B6621EF91EDB1331006CB5FF /* Products.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Products.h; sourceTree = "<group>"; };
+		B6621EFA1EDB1331006CB5FF /* Products.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Products.m; sourceTree = "<group>"; };
+		B6621EFB1EDB1331006CB5FF /* Products.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Products.xib; sourceTree = "<group>"; };
 		B67962C11E615B8400FCF6EF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = HomeScreen/HomeViewController.h; sourceTree = "<group>"; };
 		B67962C21E615B8400FCF6EF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = HomeScreen/HomeViewController.m; sourceTree = "<group>"; };
 		B67962C31E615B8400FCF6EF /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = HomeScreen/HomeViewController.xib; sourceTree = "<group>"; };
@@ -168,6 +173,9 @@
 				B6621EF41EDAFEBF006CB5FF /* WebViewController.h */,
 				B6621EF51EDAFEBF006CB5FF /* WebViewController.m */,
 				B6621EF61EDAFEBF006CB5FF /* WebViewController.xib */,
+				B6621EF91EDB1331006CB5FF /* Products.h */,
+				B6621EFA1EDB1331006CB5FF /* Products.m */,
+				B6621EFB1EDB1331006CB5FF /* Products.xib */,
 			);
 			name = "Left Slider";
 			sourceTree = "<group>";
@@ -365,6 +373,7 @@
 				B6063A271E77ABB800A05187 /* ProductListCell.xib in Resources */,
 				B6621EF81EDAFEBF006CB5FF /* WebViewController.xib in Resources */,
 				B67962DF1E61ECB400FCF6EF /* HomeMenuCell.xib in Resources */,
+				B6621EFD1EDB1331006CB5FF /* Products.xib in Resources */,
 				B65532891E614DF70002A71D /* LaunchScreen.storyboard in Resources */,
 				B67962DA1E61E72B00FCF6EF /* ActionBar.xib in Resources */,
 				B6063A631E866EDB00A05187 /* SplashScreenVC.xib in Resources */,
@@ -441,6 +450,7 @@
 				B6063A6F1E8BC03B00A05187 /* CityCell.m in Sources */,
 				B655327E1E614DF70002A71D /* AppDelegate.m in Sources */,
 				B6063A2A1E7FBF9800A05187 /* MaxGrayButton.m in Sources */,
+				B6621EFC1EDB1331006CB5FF /* Products.m in Sources */,
 				B6E8051C1EB86E4700BD2879 /* KIImagePager.m in Sources */,
 				B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */,
 				B6063A0A1E73C57B00A05187 /* LeftSlider.m in Sources */,

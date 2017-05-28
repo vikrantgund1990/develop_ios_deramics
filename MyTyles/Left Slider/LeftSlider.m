@@ -14,6 +14,7 @@
 #import "Constant.h"
 #import "ActionBar.h"
 #import "WebViewController.h"
+#import "Products.h"
 
 @interface LeftSlider (){
     IBOutlet UITableView *tblView;
@@ -58,8 +59,8 @@
             break;
         }
         case 1:{
-           // wall
-            viewCon=[[WallVC alloc]initWithNibName:@"WallVC" bundle:nil];
+           // products
+            viewCon=[[Products alloc]initWithNibName:@"Products" bundle:nil];
             break;
         }
         case 7:{

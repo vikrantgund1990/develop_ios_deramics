@@ -214,6 +214,7 @@
                 <constraint firstItem="bOc-PI-Grs" firstAttribute="leading" secondItem="BqY-vn-XFt" secondAttribute="leading" id="t2c-i3-1zY"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="60" y="-385"/>
         </view>
         <view contentMode="scaleToFill" id="klU-cK-w6k" userLabel="View-Image" customClass="KIImagePager">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
