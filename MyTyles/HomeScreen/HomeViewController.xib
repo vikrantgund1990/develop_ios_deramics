@@ -18,6 +18,7 @@
                 <outlet property="tempActionBar" destination="tsh-B9-OvK" id="Lxb-kS-Xfb"/>
                 <outlet property="txtRefralCode" destination="fUK-VI-h3u" id="dJI-QK-2Sj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewButton" destination="9uQ-cw-ltd" id="z2X-v3-NZm"/>
                 <outlet property="viewProductApplication" destination="BqY-vn-XFt" id="iBd-e6-Khz"/>
                 <outlet property="viewRefCode" destination="5dz-ib-kbD" id="fZb-k5-wnX"/>
                 <outlet property="viewRefferalCode" destination="bFf-9e-RX5" id="5h5-nd-6Yy"/>
@@ -99,12 +100,12 @@
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5dz-ib-kbD">
-                    <rect key="frame" x="10" y="256" width="355" height="155"/>
+                    <rect key="frame" x="10" y="246" width="355" height="175"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your reference code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUK-VI-h3u" customClass="CustomTextfield">
-                            <rect key="frame" x="15" y="30" width="325" height="40"/>
+                            <rect key="frame" x="15" y="30" width="325" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="cm6-pu-PtH"/>
+                                <constraint firstAttribute="height" constant="50" id="cm6-pu-PtH"/>
                             </constraints>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -115,9 +116,9 @@
                             </connections>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGW-sW-rVh" customClass="MaxGrayButton">
-                            <rect key="frame" x="15" y="85" width="157.5" height="40"/>
+                            <rect key="frame" x="15" y="95" width="157.5" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="Jqw-aO-rm2"/>
+                                <constraint firstAttribute="height" constant="50" id="Jqw-aO-rm2"/>
                             </constraints>
                             <state key="normal" title="CANCEL">
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -127,9 +128,9 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bz-aZ-Q1b" customClass="CustomButton">
-                            <rect key="frame" x="182.5" y="85" width="157.5" height="40"/>
+                            <rect key="frame" x="182.5" y="95" width="157.5" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="8MZ-LD-lyy"/>
+                                <constraint firstAttribute="height" constant="50" id="8MZ-LD-lyy"/>
                             </constraints>
                             <state key="normal" title="SUBMIT">
                                 <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -208,10 +209,10 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="bOc-PI-Grs" secondAttribute="bottom" id="EE0-15-m9s"/>
-                <constraint firstAttribute="trailing" secondItem="bOc-PI-Grs" secondAttribute="trailing" id="NCb-8z-CvQ"/>
-                <constraint firstItem="bOc-PI-Grs" firstAttribute="top" secondItem="BqY-vn-XFt" secondAttribute="top" id="cdy-Sb-zgD"/>
-                <constraint firstItem="bOc-PI-Grs" firstAttribute="leading" secondItem="BqY-vn-XFt" secondAttribute="leading" id="t2c-i3-1zY"/>
+                <constraint firstItem="bOc-PI-Grs" firstAttribute="leading" secondItem="BqY-vn-XFt" secondAttribute="leading" id="85F-4Q-BEn"/>
+                <constraint firstItem="bOc-PI-Grs" firstAttribute="top" secondItem="BqY-vn-XFt" secondAttribute="top" id="ebS-zs-Pbp"/>
+                <constraint firstAttribute="trailing" secondItem="bOc-PI-Grs" secondAttribute="trailing" id="fbh-jn-TTf"/>
+                <constraint firstAttribute="bottom" secondItem="bOc-PI-Grs" secondAttribute="bottom" id="sYB-qq-n1T"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="60" y="-385"/>
@@ -224,6 +225,70 @@
                 <outlet property="dataSource" destination="-1" id="eOS-TU-C55"/>
                 <outlet property="delegate" destination="-1" id="T7D-tS-rna"/>
             </connections>
+        </view>
+        <view contentMode="scaleToFill" id="9uQ-cw-ltd" userLabel="View-Footer">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9yR-cb-kqx">
+                    <rect key="frame" x="15" y="10" width="345" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJ6-Jh-OpJ" customClass="HomeButton">
+                            <rect key="frame" x="0.0" y="0.0" width="167.5" height="50"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <state key="normal" title="Tile Calculator"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hy-Vf-00v" customClass="HomeButton">
+                            <rect key="frame" x="177.5" y="0.0" width="167.5" height="50"/>
+                            <state key="normal" title="Contact Us"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="4Hy-Vf-00v" firstAttribute="leading" secondItem="gJ6-Jh-OpJ" secondAttribute="trailing" constant="10" id="1Rw-Lc-MgA"/>
+                        <constraint firstItem="gJ6-Jh-OpJ" firstAttribute="top" secondItem="9yR-cb-kqx" secondAttribute="top" id="99A-0c-unC"/>
+                        <constraint firstAttribute="trailing" secondItem="4Hy-Vf-00v" secondAttribute="trailing" id="Geq-qh-A23"/>
+                        <constraint firstAttribute="bottom" secondItem="4Hy-Vf-00v" secondAttribute="bottom" id="PnA-qa-20c"/>
+                        <constraint firstAttribute="bottom" secondItem="gJ6-Jh-OpJ" secondAttribute="bottom" id="YMv-um-vFU"/>
+                        <constraint firstItem="4Hy-Vf-00v" firstAttribute="top" secondItem="9yR-cb-kqx" secondAttribute="top" id="fAA-Qc-Cfb"/>
+                        <constraint firstAttribute="height" constant="50" id="keT-7K-Wri"/>
+                        <constraint firstItem="gJ6-Jh-OpJ" firstAttribute="leading" secondItem="9yR-cb-kqx" secondAttribute="leading" id="nKO-UH-SoA"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JT3-UO-5gR">
+                    <rect key="frame" x="15" y="70" width="345" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpy-gE-2ph" customClass="HomeButton">
+                            <rect key="frame" x="0.0" y="0.0" width="167.5" height="50"/>
+                            <state key="normal" title="About Us"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynm-BX-cdk" customClass="HomeButton">
+                            <rect key="frame" x="177.5" y="0.0" width="167.5" height="50"/>
+                            <state key="normal" title="Events"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ynm-BX-cdk" firstAttribute="leading" secondItem="wpy-gE-2ph" secondAttribute="trailing" constant="10" id="GZv-VC-iwy"/>
+                        <constraint firstItem="wpy-gE-2ph" firstAttribute="top" secondItem="JT3-UO-5gR" secondAttribute="top" id="K2Y-qa-3NK"/>
+                        <constraint firstItem="wpy-gE-2ph" firstAttribute="leading" secondItem="JT3-UO-5gR" secondAttribute="leading" id="SPd-PQ-j1t"/>
+                        <constraint firstAttribute="height" constant="50" id="TZN-ix-Tc5"/>
+                        <constraint firstAttribute="bottom" secondItem="wpy-gE-2ph" secondAttribute="bottom" id="XgY-ed-bMG"/>
+                        <constraint firstItem="ynm-BX-cdk" firstAttribute="top" secondItem="JT3-UO-5gR" secondAttribute="top" id="g7O-Uu-7xQ"/>
+                        <constraint firstAttribute="bottom" secondItem="ynm-BX-cdk" secondAttribute="bottom" id="wAJ-Xj-LKZ"/>
+                        <constraint firstAttribute="trailing" secondItem="ynm-BX-cdk" secondAttribute="trailing" id="zvw-0m-pXg"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9yR-cb-kqx" firstAttribute="top" secondItem="9uQ-cw-ltd" secondAttribute="top" constant="10" id="9LD-5j-pcA"/>
+                <constraint firstAttribute="trailing" secondItem="JT3-UO-5gR" secondAttribute="trailing" constant="15" id="Joc-Id-zBI"/>
+                <constraint firstAttribute="trailing" secondItem="9yR-cb-kqx" secondAttribute="trailing" constant="15" id="TKY-rl-NyA"/>
+                <constraint firstItem="9yR-cb-kqx" firstAttribute="leading" secondItem="9uQ-cw-ltd" secondAttribute="leading" constant="15" id="bLn-my-NsT"/>
+                <constraint firstItem="JT3-UO-5gR" firstAttribute="leading" secondItem="9uQ-cw-ltd" secondAttribute="leading" constant="15" id="tft-aM-4y2"/>
+                <constraint firstItem="JT3-UO-5gR" firstAttribute="top" secondItem="9yR-cb-kqx" secondAttribute="bottom" constant="10" id="yre-RU-xPj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="30" y="-489"/>
         </view>
     </objects>
     <resources>

@@ -37,6 +37,7 @@
 		B6621EF81EDAFEBF006CB5FF /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6621EF61EDAFEBF006CB5FF /* WebViewController.xib */; };
 		B6621EFC1EDB1331006CB5FF /* Products.m in Sources */ = {isa = PBXBuildFile; fileRef = B6621EFA1EDB1331006CB5FF /* Products.m */; };
 		B6621EFD1EDB1331006CB5FF /* Products.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6621EFB1EDB1331006CB5FF /* Products.xib */; };
+		B6621F001EDB42C0006CB5FF /* HomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6621EFF1EDB42C0006CB5FF /* HomeButton.m */; };
 		B67962C41E615B8400FCF6EF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962C21E615B8400FCF6EF /* HomeViewController.m */; };
 		B67962C51E615B8400FCF6EF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B67962C31E615B8400FCF6EF /* HomeViewController.xib */; };
 		B67962CB1E61DBF200FCF6EF /* WebServiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67962CA1E61DBF200FCF6EF /* WebServiceController.m */; };
@@ -100,6 +101,8 @@
 		B6621EF91EDB1331006CB5FF /* Products.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Products.h; sourceTree = "<group>"; };
 		B6621EFA1EDB1331006CB5FF /* Products.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Products.m; sourceTree = "<group>"; };
 		B6621EFB1EDB1331006CB5FF /* Products.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Products.xib; sourceTree = "<group>"; };
+		B6621EFE1EDB42C0006CB5FF /* HomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeButton.h; path = Custom/HomeButton.h; sourceTree = "<group>"; };
+		B6621EFF1EDB42C0006CB5FF /* HomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeButton.m; path = Custom/HomeButton.m; sourceTree = "<group>"; };
 		B67962C11E615B8400FCF6EF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = HomeScreen/HomeViewController.h; sourceTree = "<group>"; };
 		B67962C21E615B8400FCF6EF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = HomeScreen/HomeViewController.m; sourceTree = "<group>"; };
 		B67962C31E615B8400FCF6EF /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = HomeScreen/HomeViewController.xib; sourceTree = "<group>"; };
@@ -293,6 +296,8 @@
 				B6063A651E86E8B700A05187 /* CustomButton.m */,
 				B6063A671E86EBCE00A05187 /* CustomTextfield.h */,
 				B6063A681E86EBCE00A05187 /* CustomTextfield.m */,
+				B6621EFE1EDB42C0006CB5FF /* HomeButton.h */,
+				B6621EFF1EDB42C0006CB5FF /* HomeButton.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -446,6 +451,7 @@
 				B6063A621E866EDB00A05187 /* SplashScreenVC.m in Sources */,
 				B6063A211E75283800A05187 /* FloorVC.m in Sources */,
 				B6063A691E86EBCE00A05187 /* CustomTextfield.m in Sources */,
+				B6621F001EDB42C0006CB5FF /* HomeButton.m in Sources */,
 				B6063A171E73F89D00A05187 /* LeftSliderCell.m in Sources */,
 				B6063A6F1E8BC03B00A05187 /* CityCell.m in Sources */,
 				B655327E1E614DF70002A71D /* AppDelegate.m in Sources */,

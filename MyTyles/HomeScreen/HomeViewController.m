@@ -95,6 +95,11 @@
     [newView addSubview:viewProductApplication];
     
     [tblView setTableHeaderView:newView];
+    
+    frame=viewButton.frame;
+    frame.size.width=[Constant returnWidth];
+    viewButton.frame=frame;
+    [tblView setTableFooterView:viewButton];
 }
 -(void)viewDidAppear:(BOOL)animated{
     _imagePager.pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
@@ -274,7 +279,7 @@
 //}
 -(void)showRefCode{
     [actionBar removeFromSuperview];
-    [viewButton setHidden:true];
+    //[viewButton setHidden:true];
     [tblView setHidden:false];
     [viewRefferalCode setHidden:false];
     [tempActionBar setHidden:false];
@@ -338,7 +343,7 @@
     [self showHideViews:false];
 }
 -(void)showHideViews:(BOOL)showRefferalCode{
-    [viewButton setHidden:showRefferalCode];
+   // [viewButton setHidden:showRefferalCode];
     [tblView setHidden:showRefferalCode];
     [viewRefferalCode setHidden:!showRefferalCode];
     [tempActionBar setHidden:true];

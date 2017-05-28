@@ -22,7 +22,7 @@
 {
     self.layer.cornerRadius = 5;
     [self setBorderStyle:UITextBorderStyleNone];
-    self.layer.borderWidth = 0.5;
+    self.layer.borderWidth = 1.0f;
     self.layer.borderColor = [[UIColor appColor] CGColor];
     self.layer.backgroundColor = [[UIColor whiteColor]CGColor];
     [self setLeftPadding:15];
